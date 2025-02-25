@@ -1,0 +1,126 @@
+ 
+****************************************
+Report : clock timing
+        -type summary
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Sat Apr 13 14:32:34 2024
+****************************************
+
+  Clock: clk_in
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      ick_gen/i_ck_dmp_enable_a_latched_reg/GATE_N           0.00      wf-
+
+  Minimum setup capture latency:
+      ick_gen/i_ck_dmp_enable_a_latched_reg/GATE_N           0.00      wr+
+
+  Minimum hold launch latency:
+      ick_gen/i_ck_dmp_enable_a_latched_reg/GATE_N           0.00      bf-
+
+  Maximum hold capture latency:
+      ick_gen/i_ck_dmp_enable_a_latched_reg/GATE_N           0.00      br+
+
+  Maximum active transition:
+      ick_gen/i_ck_dmp_enable_a_latched_reg/GATE_N           0.20      wf-
+
+  Minimum active transition:
+      ick_gen/i_ck_dmp_enable_a_latched_reg/GATE_N           0.20      wf-
+
+  Maximum setup skew:
+      iarc600/idmp/idebug_access/i_debug_if_r_reg/CLK                  wr-+
+      iarc600/idmp/idccm_control/i_d_addr_r_reg_0_/CLK       0.00      wr-+
+
+  Maximum hold skew:
+      iarc600/idmp/idebug_access/i_debug_if_r_reg/CLK                  br-+
+      iarc600/idmp/idccm_control/i_d_addr_r_reg_0_/CLK       0.00      br-+
+----------------------------------------------------------------------------
+
+  Clock: clk_system_in
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK            0.00      wr-+
+
+  Minimum setup capture latency:
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK            0.00      wr-+
+
+  Minimum hold launch latency:
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK            0.00      br-+
+
+  Maximum hold capture latency:
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK            0.00      br-+
+
+  Maximum active transition:
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK            0.20      wr-+
+
+  Minimum active transition:
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK            0.20      wr-+
+
+  Maximum setup skew:
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK                      wr-+
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK            0.00      wr-+
+
+  Maximum hold skew:
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK                      br-+
+      iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK            0.00      br-+
+----------------------------------------------------------------------------
+
+  Clock: hclk
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      iibus/ibus_dcbri_ahb/i_hbusreq_r_reg/CLK               0.00      wr-+
+
+  Minimum setup capture latency:
+      iibus/ibus_dcbri_ahb/i_hbusreq_r_reg/CLK               0.00      wr-+
+
+  Minimum hold launch latency:
+      iibus/ibus_dcbri_ahb/i_hbusreq_r_reg/CLK               0.00      br-+
+
+  Maximum hold capture latency:
+      iibus/ibus_dcbri_ahb/i_hbusreq_r_reg/CLK               0.00      br-+
+
+  Maximum active transition:
+      iibus/ibus_dcbri_ahb/i_hbusreq_r_reg/CLK               0.20      wr-+
+
+  Minimum active transition:
+      iibus/ibus_dcbri_ahb/i_hbusreq_r_reg/CLK               0.20      wr-+
+
+  Maximum setup skew:
+      iibus/ibus_dcbri_ahb/i_1k_sbrst_r_reg/CLK                        wr-+
+      iibus/ibus_dcbri_ahb/i_1k_sbrst_r_reg/CLK              0.00      wr-+
+
+  Maximum hold skew:
+      iibus/ibus_dcbri_ahb/i_1k_sbrst_r_reg/CLK                        br-+
+      iibus/ibus_dcbri_ahb/i_1k_sbrst_r_reg/CLK              0.00      br-+
+----------------------------------------------------------------------------
+
+  Clock: jtag_tck
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      ijtag_port/u_debug_port/jtag_tdo_r_reg/CLK             0.00      wri-+
+
+  Minimum setup capture latency:
+      ijtag_port/u_debug_port/jtag_tdo_r_reg/CLK             0.00      wri-+
+
+  Minimum hold launch latency:
+      ijtag_port/u_debug_port/jtag_tdo_r_reg/CLK             0.00      bri-+
+
+  Maximum hold capture latency:
+      ijtag_port/u_debug_port/jtag_tdo_r_reg/CLK             0.00      bri-+
+
+  Maximum active transition:
+      ijtag_port/u_debug_port/jtag_tdo_r_reg/CLK             0.20      wri-+
+
+  Minimum active transition:
+      ijtag_port/u_debug_port/jtag_tdo_r_reg/CLK             0.20      wri-+
+
+  Maximum setup skew:
+      iio_flops/i_jtag_trst_synchro_r_reg/CLK                          wr-+
+      iio_flops/i_jtag_trst_r1_reg/CLK                       0.00      wr-+
+
+  Maximum hold skew:
+      iio_flops/i_jtag_trst_synchro_r_reg/CLK                          br-+
+      iio_flops/i_jtag_trst_r1_reg/CLK                       0.00      br-+
+----------------------------------------------------------------------------
+
+1

@@ -1,0 +1,18 @@
+build_dir: 5-skywater-130nm
+build_id: '5'
+commands:
+- mkdir -p outputs && cd outputs
+- ln -sf ../view-standard adk
+edges_i: {}
+edges_o:
+  adk:
+  - f: adk
+    step: 6-synopsys-dc-synthesis
+name: skywater-130nm
+outputs:
+- adk
+parameters:
+  adk: skywater-130nm-adk.v2021
+  adk_view: view-standard
+sandbox: true
+source: /farmshare/home/classes/ee/292a/skywater-130nm-adk.v2021

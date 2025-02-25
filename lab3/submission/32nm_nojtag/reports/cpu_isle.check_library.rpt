@@ -1,0 +1,123 @@
+Loading db file '/home/users/brionqye/Documents/EE292A/ee292a_lab3/build_nojtag/6-synopsys-dc-synthesis/inputs/arc_rams.db'
+Warning: Duplicate library /home/users/brionqye/Documents/EE292A/ee292a_lab3/build_nojtag/6-synopsys-dc-synthesis/inputs/adk/stdcells.db specified.
+
+#BEGIN_XCHECK_LIBRARY
+
+Logic Library:    saed32rvt_tt0p85v25c 
+                  arc_rams 
+Physical Library: /home/users/brionqye/Documents/EE292A/ee292a_lab3/build_nojtag/5-snps_adk_32nm/view-standard/stdcells.mwlib 
+check_library options: 	
+Version: 				S-2021.06-SP5-4
+Check date and time:	Mon May 13 03:11:30 2024
+
+          List of logic library and file names
+------------------------------------------------------------------------------
+Logic library name           Logic library file name
+------------------------------------------------------------------------------
+saed32rvt_tt0p85v25c         /home/users/brionqye/Documents/EE292A/ee292a_lab3/build_nojtag/6-synopsys-dc-synthesis/inputs/adk/stdcells.db
+arc_rams                     /home/users/brionqye/Documents/EE292A/ee292a_lab3/build_nojtag/6-synopsys-dc-synthesis/inputs/arc_rams.db
+------------------------------------------------------------------------------
+
+#BEGIN_XCHECK_LOGICCELLS
+
+Number of cells missing in logic library:	56 (out of 297)
+
+Information: List of cells missing in logic library (LIBCHK-210)
+-------------------------------------------------------------------------
+Cell name                  Cell type             Physical library
+-------------------------------------------------------------------------
+LSUPX1_RVT                 Core                  stdcells.mwlib
+LSUPX2_RVT                 Core                  stdcells.mwlib
+LSUPX4_RVT                 Core                  stdcells.mwlib
+LSUPX8_RVT                 Core                  stdcells.mwlib
+LSDNSSX8_RVT               Core                  stdcells.mwlib
+LSDNX1_RVT                 Core                  stdcells.mwlib
+LSDNX2_RVT                 Core                  stdcells.mwlib
+LSDNX4_RVT                 Core                  stdcells.mwlib
+LSDNX8_RVT                 Core                  stdcells.mwlib
+LSUPENCLX1_RVT             Core                  stdcells.mwlib
+LSUPENCLX2_RVT             Core                  stdcells.mwlib
+LSUPENCLX4_RVT             Core                  stdcells.mwlib
+LSUPENCLX8_RVT             Core                  stdcells.mwlib
+LSUPENX1_RVT               Core                  stdcells.mwlib
+LSUPENX2_RVT               Core                  stdcells.mwlib
+LSUPENX4_RVT               Core                  stdcells.mwlib
+LSUPENX8_RVT               Core                  stdcells.mwlib
+LSDNENCLX4_RVT             Core                  stdcells.mwlib
+LSDNENCLX8_RVT             Core                  stdcells.mwlib
+LSDNENSSX1_RVT             Core                  stdcells.mwlib
+LSDNENSSX2_RVT             Core                  stdcells.mwlib
+LSDNENSSX4_RVT             Core                  stdcells.mwlib
+LSDNENSSX8_RVT             Core                  stdcells.mwlib
+LSDNENX1_RVT               Core                  stdcells.mwlib
+LSDNENX2_RVT               Core                  stdcells.mwlib
+LSDNENX4_RVT               Core                  stdcells.mwlib
+LSDNENX8_RVT               Core                  stdcells.mwlib
+LSDNSSX1_RVT               Core                  stdcells.mwlib
+LSDNSSX2_RVT               Core                  stdcells.mwlib
+LSDNSSX4_RVT               Core                  stdcells.mwlib
+LSDNENCLSSX1_RVT           Core                  stdcells.mwlib
+LSDNENCLSSX2_RVT           Core                  stdcells.mwlib
+LSDNENCLSSX4_RVT           Core                  stdcells.mwlib
+LSDNENCLSSX8_RVT           Core                  stdcells.mwlib
+LSDNENCLX1_RVT             Core                  stdcells.mwlib
+LSDNENCLX2_RVT             Core                  stdcells.mwlib
+HEADX2_RVT                 Core                  stdcells.mwlib
+HEADX32_RVT                Core                  stdcells.mwlib
+HEADX4_RVT                 Core                  stdcells.mwlib
+HEADX8_RVT                 Core                  stdcells.mwlib
+FOOTX16_RVT                Core                  stdcells.mwlib
+FOOTX2_RVT                 Core                  stdcells.mwlib
+FOOTX32_RVT                Core                  stdcells.mwlib
+FOOTX4_RVT                 Core                  stdcells.mwlib
+FOOTX8_RVT                 Core                  stdcells.mwlib
+HEAD2X16_RVT               Core                  stdcells.mwlib
+HEAD2X2_RVT                Core                  stdcells.mwlib
+HEAD2X32_RVT               Core                  stdcells.mwlib
+HEAD2X4_RVT                Core                  stdcells.mwlib
+HEAD2X8_RVT                Core                  stdcells.mwlib
+HEADX16_RVT                Core                  stdcells.mwlib
+FOOT2X16_RVT               Core                  stdcells.mwlib
+FOOT2X2_RVT                Core                  stdcells.mwlib
+FOOT2X32_RVT               Core                  stdcells.mwlib
+FOOT2X4_RVT                Core                  stdcells.mwlib
+FOOT2X8_RVT                Core                  stdcells.mwlib
+-------------------------------------------------------------------------
+
+#END_XCHECK_LOGICCELLS
+
+#BEGIN_XCHECK_PHYSICALCELLS
+
+Number of cells missing in physical library:	3 (out of 350)
+
+Warning: List of cells missing in physical library (LIBCHK-211)
+-------------------------------------------------------------------------
+Cell name                  Cell type             Logic library
+-------------------------------------------------------------------------
+jk_sram                    non pad_cell          arc_rams
+fake_dccm                  non pad_cell          arc_rams
+fake_iccm                  non pad_cell          arc_rams
+-------------------------------------------------------------------------
+
+#END_XCHECK_PHYSICALCELLS
+
+#BEGIN_XCHECK_PINS
+
+Number of cells with missing or mismatched pins in libraries:	0
+
+#END_XCHECK_PINS
+
+#BEGIN_XCHECK_CELLANTENNADIODETYPE
+
+Number of cells with inconsistent antenna_diode_type:	0
+
+#END_XCHECK_CELLANTENNADIODETYPE
+
+Logic vs. physical library check summary:
+Number of cells missing in logic library:	56 
+Number of cells missing in physical library:	3 
+Information: Logic library is INCONSISTENT with physical library (LIBCHK-220)
+
+#END_XCHECK_LIBRARY
+
+0

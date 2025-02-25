@@ -1,0 +1,16 @@
+************************************
+Report : units
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Mon May 13 03:39:11 2024
+
+************************************
+Units
+------------------------------------
+Time_unit            : 1.0e-09 Second(ns)
+Capacitive_load_unit : 1.0e-15 Farad(fF)
+Resistance_unit      : 1.0e+6 Ohm(MOhm)
+Voltage_unit         : 1 Volt
+Power_unit           : N/A
+Current_unit         : 1.0e-06 Amp(uA)
+1

@@ -1,0 +1,906 @@
+ 
+****************************************
+Report : resources
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Mon May 13 03:39:12 2024
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_io_flops_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_jtag_port_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_tap_controller_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_debug_port_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_sys_clk_sync_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_ibus_cksyn_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_ibus_cksyn_main_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_1        | DW01_inc       | width=2    | add_46977 (design.v:46977) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_1            | DW01_inc         | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_ibus_cksyn_sys_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_arc600_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_dmp_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_dccm_control_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_readsort_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_debug_access_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_ldst_queue_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_readsort_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_mem_align_chk_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_decoder_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_1         | DW_cmp         | width=5    | eq_40948 (design.v:40948)  |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_1             | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_ld_arb_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_quarc_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_debug_exts_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_actionpoints_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_ap_compare_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_ap_compare_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_auxiliary_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_timer0_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_1        | DW01_inc       | width=32   | add_4086 (design.v:4086)   |
+| eq_x_2         | DW_cmp         | width=32   | eq_4121 (design.v:4121)    |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_1            | DW01_inc         | apparch (area)     |                |
+| eq_x_2             | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_hostif_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_xaux_regs_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_aux_regs_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_debug_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_flags_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_registers_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_inst_align_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_if_sys_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_iccm_control_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_xcoreregs_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_coreregs_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_regfile_3p_wrap_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_regfile_3p_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_sync_regs_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_14        | DW_cmp         | width=6    | eq_15338_2 (design.v:15338) |
+| eq_x_15        | DW_cmp         | width=6    | eq_15338_4 (design.v:15338) |
+| eq_x_17        | DW_cmp         | width=6    | eq_15349_2 (design.v:15349) |
+| eq_x_18        | DW_cmp         | width=6    | eq_15349_4 (design.v:15349) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_14            | DW_cmp           | apparch (area)     |                |
+| eq_x_15            | DW_cmp           | apparch (area)     |                |
+| eq_x_17            | DW_cmp           | apparch (area)     |                |
+| eq_x_18            | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+ 
+****************************************
+Design : cpu_isle_loopcnt_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_1         | DW_cmp         | width=24   | eq_13800 (design.v:13800)  |
+| DP_OP_13J11_122_8061            |            |                            |
+|                | DP_OP_13J11_122_8061 |      |                            |
+| DP_OP_14J11_123_8061            |            |                            |
+|                | DP_OP_14J11_123_8061 |      |                            |
+=============================================================================
+
+Datapath Report for DP_OP_13J11_122_8061
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_13J11_122_8061 | sub_13986 (design.v:13986)                          |
+|                      | eq_13991 (design.v:13991)                           |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 23    |                                          |
+| I2    | PI   | Unsigned | 24    |                                          |
+| T1    | IFO  | Signed   | 23    | I1 - $unsigned(1'b1) (design.v:13986)    |
+| T9    | IFO  | Signed   | 24    | T1 << 1                                  |
+| O1    | PO   | Unsigned | 1     | I2 == $unsigned(T9) (design.v:13991)     |
+==============================================================================
+
+Datapath Report for DP_OP_14J11_123_8061
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_14J11_123_8061 | sub_13987 (design.v:13987)                          |
+|                      | eq_13995 (design.v:13995)                           |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 23    |                                          |
+| I2    | PI   | Unsigned | 24    |                                          |
+| T2    | IFO  | Signed   | 23    | I1 - $unsigned(2'b10) (design.v:13987)   |
+| T10   | IFO  | Signed   | 24    | T2 << 1                                  |
+| O1    | PO   | Unsigned | 1     | I2 == $unsigned(T10) (design.v:13995)    |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_1             | DW_cmp           | apparch (area)     |                |
+| DP_OP_13J11_122_8061                  |                    |                |
+|                    | DP_OP_13J11_122_8061 | str (area)     |                |
+| DP_OP_14J11_123_8061                  |                    |                |
+|                    | DP_OP_14J11_123_8061 | str (area)     |                |
+===============================================================================
+
+ 
+****************************************
+Design : cpu_isle_dec32_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| sub_x_1        | DW01_dec       | width=8    | sub_13572 (design.v:13572) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_x_1            | DW01_dec         | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_cr_int_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_alu_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_xalu_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_46       | DW01_inc       | width=4    | add_10330 (design.v:10330) |
+| add_x_55       | DW01_add       | width=36   | add_10365 (design.v:10365) |
+| add_x_56       | DW01_add       | width=36   | add_10383 (design.v:10383) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_55           | DW01_add         | apparch (area)     |                |
+| add_x_56           | DW01_add         | apparch (area)     |                |
+| add_x_46           | DW01_inc         | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_mult32x5cs_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_bigalu_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_adder_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_1         | DW_cmp         | width=32   | eq_10731 (design.v:10731)  |
+| DP_OP_7J21_122_4863             |            |                            |
+|                | DP_OP_7J21_122_4863 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_7J21_122_4863
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_7J21_122_4863  | add_10726 (design.v:10726)                          |
+|                      | add32_2_PROC/add32_2 (design.v:10726)               |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 32    |                                          |
+| I2    | PI   | Unsigned | 32    |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| O1    | PO   | Unsigned | 33    | I1 + I2 + I3 (design.v:10726)            |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_1             | DW_cmp           | apparch (area)     |                |
+| DP_OP_7J21_122_4863                   |                    |                |
+|                    | DP_OP_7J21_122_4863 | str (area,speed)                 |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_control_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_pcounter_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_1        | DW01_add       | width=22   | add_18160 (design.v:18160) |
+| add_x_452      | DW01_inc       | width=21   | add_18235 (design.v:18235) |
+| add_x_453      | DW01_inc       | width=3    | add_18239 (design.v:18239) |
+| add_x_454      | DW01_inc       | width=3    | add_18243 (design.v:18243) |
+=============================================================================
+
+
+Datapath Extraction Report
+
+Information: Operator associated with resources 'add_18235 (design.v:18235)' in design 'pcounter' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'C1480 (design.v:18247)'.  (HDL-120)
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_1            | DW01_add         | apparch (area)     |                |
+| add_x_452          | DW01_inc         | apparch (area)     |                |
+| add_x_453          | DW01_inc         | apparch (area)     |                |
+| add_x_454          | DW01_inc         | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_ck_ctrl_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_int_unit_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_xrctl_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_rctl_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_53        | DW_cmp         | width=6    | eq_30896 (design.v:30896)  |
+| eq_x_55        | DW_cmp         | width=6    | eq_30905 (design.v:30905)  |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_53            | DW_cmp           | apparch (area)     |                |
+| eq_x_55            | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_lsu_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_scorebd_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_scorfifo_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| ne_x_1         | DW_cmp         | width=2    | ne_21258 (design.v:21258)  |
+| eq_x_5         | DW_cmp         | width=2    | eq_21253_2 (design.v:21253) |
+                |                |            | eq_21295_2 (design.v:21295) |
+                |                |            | eq_21308 (design.v:21308)  |
+|                |                |            | eq_21314 (design.v:21314)  |
+|                |                |            | eq_21320 (design.v:21320)  |
+| eq_x_6         | DW_cmp         | width=2    | eq_21308_2 (design.v:21308) |
+                |                |            | eq_21314_2 (design.v:21314) |
+                |                |            | eq_21320_2 (design.v:21320) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| ne_x_1             | DW_cmp           | apparch (area)     |                |
+| eq_x_5             | DW_cmp           | apparch (area)     |                |
+| eq_x_6             | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+ 
+****************************************
+Design : cpu_isle_scoritem_1
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_1         | DW_cmp         | width=6    | eq_20752 (design.v:20752)  |
+| eq_x_2         | DW_cmp         | width=6    | eq_20755 (design.v:20755)  |
+| eq_x_3         | DW_cmp         | width=6    | eq_20758 (design.v:20758)  |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_1             | DW_cmp           | apparch (area)     |                |
+| eq_x_2             | DW_cmp           | apparch (area)     |                |
+| eq_x_3             | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+ 
+****************************************
+Design : cpu_isle_scoritem_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_1         | DW_cmp         | width=6    | eq_20752 (design.v:20752)  |
+| eq_x_2         | DW_cmp         | width=6    | eq_20755 (design.v:20755)  |
+| eq_x_3         | DW_cmp         | width=6    | eq_20758 (design.v:20758)  |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_1             | DW_cmp           | apparch (area)     |                |
+| eq_x_2             | DW_cmp           | apparch (area)     |                |
+| eq_x_3             | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_userextensions_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_eia_common_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_ibus_0
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : cpu_isle_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| ne_x_1         | DW_cmp         | width=2    | ne_44194 (design.v:44194)  |
+| sub_x_186      | DW01_dec       | width=2    | sub_44927 (design.v:44927) |
+| sub_x_187      | DW01_dec       | width=2    | sub_44929 (design.v:44929) |
+| DP_OP_269J2_122_3108            |            |                            |
+|                | DP_OP_269J2_122_3108 |      |                            |
+| DP_OP_270J2_123_5139            |            |                            |
+|                | DP_OP_270J2_123_5139 |      |                            |
+=============================================================================
+
+Datapath Report for DP_OP_269J2_122_3108
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_269J2_122_3108 | sub_45000 (design.v:45000)                          |
+|                      | add_45000 (design.v:45000)                          |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 1     |                                          |
+| I2    | PI   | Signed   | 9     |                                          |
+| O1    | PO   | Signed   | 9     | I1 - $unsigned(1'b1) + I2 (design.v:45000) |
+==============================================================================
+
+Datapath Report for DP_OP_270J2_123_5139
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_270J2_123_5139 | add_45002 (design.v:45002)                          |
+|                      | ne_45011 (design.v:45011) ne_45015 (design.v:45015) |
+|                      | ne_45019 (design.v:45019)                           |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| I2    | PI   | Unsigned | 7     |                                          |
+| I3    | PI   | Unsigned | 7     |                                          |
+| I4    | PI   | Unsigned | 7     |                                          |
+| T141  | IFO  | Unsigned | 5     | I1 + $unsigned(1'b1) (design.v:45002)    |
+| T256  | IFO  | Unsigned | 7     | T141 << 2                                |
+| O1    | PO   | Unsigned | 1     | T256 != I2 (design.v:45011)              |
+| O2    | PO   | Unsigned | 1     | T256 != I3 (design.v:45015)              |
+| O3    | PO   | Unsigned | 1     | T256 != I4 (design.v:45019)              |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| ne_x_1             | DW_cmp           | apparch (area)     |                |
+| sub_x_186          | DW01_dec         | apparch (area)     |                |
+| sub_x_187          | DW01_dec         | apparch (area)     |                |
+===============================================================================
+
+ 
+****************************************
+Design : cpu_isle_ibus_iarb_ADDR_WIDTH24_DATA_WIDTH32_BE_WIDTH4_FIFO_DEPTH4_0
+****************************************
+
+Resource Report for this hierarchy in file ./inputs/design.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_55       | DW01_inc       | width=3    | add_46110 (design.v:46110) |
+| sub_x_56       | DW01_dec       | width=3    | sub_46111 (design.v:46111) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_55           | DW01_inc         | apparch (area)     |                |
+| sub_x_56           | DW01_dec         | apparch (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_ck_gen_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_arc_ram_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_iccm_ram_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : cpu_isle_dccm_ram_0
+****************************************
+
+No implementations to report
+1

@@ -1,0 +1,64 @@
+build_dir: 4-rtl
+build_id: '4'
+commands:
+- source concat_rtl
+- cat concat_rtl.v > outputs/design.v
+- cat verilog/extutil.v > outputs/extutil.v
+- cat verilog/jtag_defs.v > outputs/jtag_defs.v
+- cat verilog/arcutil.v > outputs/arcutil.v
+- cat verilog/arcutil_pkg_defines.v > outputs/arcutil_pkg_defines.v
+- cat verilog/asmutil.v > outputs/asmutil.v
+- cat verilog/che_util.v > outputs/che_util.v
+- cat verilog/xdefs.v > outputs/xdefs.v
+- cat verilog/uxdefs.v > outputs/uxdefs.v
+- cat verilog/ext_msb.v > outputs/ext_msb.v
+- cat verilog/arc600constants.v > outputs/arc600constants.v
+edges_i: {}
+edges_o:
+  arc600constants.v:
+  - f: arc600constants.v
+    step: 6-synopsys-dc-synthesis
+  arcutil.v:
+  - f: arcutil.v
+    step: 6-synopsys-dc-synthesis
+  arcutil_pkg_defines.v:
+  - f: arcutil_pkg_defines.v
+    step: 6-synopsys-dc-synthesis
+  asmutil.v:
+  - f: asmutil.v
+    step: 6-synopsys-dc-synthesis
+  che_util.v:
+  - f: che_util.v
+    step: 6-synopsys-dc-synthesis
+  design.v:
+  - f: design.v
+    step: 6-synopsys-dc-synthesis
+  ext_msb.v:
+  - f: ext_msb.v
+    step: 6-synopsys-dc-synthesis
+  extutil.v:
+  - f: extutil.v
+    step: 6-synopsys-dc-synthesis
+  jtag_defs.v:
+  - f: jtag_defs.v
+    step: 6-synopsys-dc-synthesis
+  uxdefs.v:
+  - f: uxdefs.v
+    step: 6-synopsys-dc-synthesis
+  xdefs.v:
+  - f: xdefs.v
+    step: 6-synopsys-dc-synthesis
+name: rtl
+outputs:
+- design.v
+- extutil.v
+- jtag_defs.v
+- arcutil.v
+- arcutil_pkg_defines.v
+- asmutil.v
+- che_util.v
+- xdefs.v
+- uxdefs.v
+- ext_msb.v
+- arc600constants.v
+source: /home/users/brionqye/Documents/EE292A/ee292a_lab2/design/rtl

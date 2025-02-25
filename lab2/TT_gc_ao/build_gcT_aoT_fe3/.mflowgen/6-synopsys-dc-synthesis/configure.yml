@@ -1,0 +1,134 @@
+build_dir: 6-synopsys-dc-synthesis
+build_id: '6'
+commands:
+- bash run.sh
+debug:
+- export DC_EXIT_AFTER_SETUP=1
+- ln -sf results/*.mapped.ddc debug.ddc
+- design_vision-xg -topographical -x "source START.tcl; read_ddc debug.ddc"
+edges_i:
+  adk:
+  - f: adk
+    step: 5-skywater-130nm
+  arc600constants.v:
+  - f: arc600constants.v
+    step: 4-rtl
+  arc_rams.db:
+  - f: arc_rams.db
+    step: 0-arc_ram_lib
+  arcutil.v:
+  - f: arcutil.v
+    step: 4-rtl
+  arcutil_pkg_defines.v:
+  - f: arcutil_pkg_defines.v
+    step: 4-rtl
+  asmutil.v:
+  - f: asmutil.v
+    step: 4-rtl
+  che_util.v:
+  - f: che_util.v
+    step: 4-rtl
+  constraints.tcl:
+  - f: constraints.tcl
+    step: 1-constraints
+  design.v:
+  - f: design.v
+    step: 4-rtl
+  ext_msb.v:
+  - f: ext_msb.v
+    step: 4-rtl
+  extutil.v:
+  - f: extutil.v
+    step: 4-rtl
+  generate-results.tcl:
+  - f: generate-results.tcl
+    step: 2-custom_dc_scripts
+  jtag_defs.v:
+  - f: jtag_defs.v
+    step: 4-rtl
+  uxdefs.v:
+  - f: uxdefs.v
+    step: 4-rtl
+  xdefs.v:
+  - f: xdefs.v
+    step: 4-rtl
+edges_o: {}
+inputs:
+- adk
+- design.v
+- constraints.tcl
+- run.saif
+- design.upf
+- arc_rams.db
+- extutil.v
+- jtag_defs.v
+- arcutil.v
+- arcutil_pkg_defines.v
+- asmutil.v
+- che_util.v
+- xdefs.v
+- uxdefs.v
+- ext_msb.v
+- arc600constants.v
+- generate-results.tcl
+name: synopsys-dc-synthesis
+outputs:
+- design.v
+- design.sdc
+- design.namemap
+- design.svf
+- design.upf
+parameters:
+  clock_period: 1.0
+  design_name: cpu_isle
+  flatten_effort: 3
+  gate_clock: true
+  high_effort_area_opt: true
+  nthreads: 16
+  order:
+  - designer-interface.tcl
+  - setup-session.tcl
+  - read-design.tcl
+  - constraints.tcl
+  - make-path-groups.tcl
+  - compile-options.tcl
+  - compile.tcl
+  - generate-results.tcl
+  - reporting.tcl
+  saif_instance: undefined
+  suppress_msg: false
+  suppressed_msg:
+  - TFCHK-072
+  - TFCHK-014
+  - TFCHK-049
+  - TFCHK-050
+  - TFCHK-012
+  - TFCHK-073
+  - TFCHK-092
+  - PSYN-651
+  - PSYN-650
+  topographical: true
+  uniquify_with_design_name: true
+postconditions:
+- assert File( 'outputs/design.v' )
+- assert File( 'outputs/design.sdc' )
+- assert 'error:' not in File( 'logs/dc.log' )
+- assert 'Unresolved references' not in File( 'logs/dc.log' )
+- assert 'Unable to resolve' not in File( 'logs/dc.log' )
+- assert 'Presto compilation terminated' not in File( 'logs/dc.log' )
+- assert 'GTECH' not in File( 'outputs/design.v' )
+- assert 'ELAB-405' not in File( 'logs/dc.log' )
+- assert 'PSYN-024' not in File( 'logs/dc.log' )
+- assert 'PSYN-025' not in File( 'logs/dc.log' )
+- assert 'PSYN-039' not in File( 'logs/dc.log' )
+- assert 'create_clock' in File( 'outputs/design.sdc' )
+- |
+  from assertion_helpers import percent_clock_gated, n_regs
+  if n_regs() > 10:
+    assert percent_clock_gated() > 0.50
+preconditions:
+- assert Tool( 'dc_shell-xg-t' )
+- assert File( 'inputs/adk' )
+- assert File( 'inputs/design.v' )
+- assert File( 'inputs/constraints.tcl' )
+source: /home/users/brionqye/Documents/EE292A/ee292a_lab2/mflowgen/steps/synopsys-dc-synthesis

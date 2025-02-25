@@ -1,0 +1,151 @@
+ 
+****************************************
+Report : qor
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Mon May 13 03:39:11 2024
+****************************************
+
+
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:              36.00
+  Critical Path Length:          2.72
+  Critical Path Slack:           0.62
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          1.54
+  Critical Path Slack:           2.01
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk_in'
+  -----------------------------------
+  Levels of Logic:              54.00
+  Critical Path Length:          4.55
+  Critical Path Slack:           0.04
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk_system_in'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.15
+  Critical Path Slack:          14.59
+  Critical Path Clk Period:     15.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'hclk'
+  -----------------------------------
+  Levels of Logic:               9.00
+  Critical Path Length:          2.28
+  Critical Path Slack:           2.49
+  Critical Path Clk Period:     15.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'jtag_tck'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          0.68
+  Critical Path Slack:          44.01
+  Critical Path Clk Period:    100.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:        168
+  Hierarchical Port Count:      24663
+  Leaf Cell Count:              13012
+  Buf/Inv Cell Count:            1758
+  Buf Cell Count:                 509
+  Inv Cell Count:                1249
+  CT Buf/Inv Cell Count:            2
+  Combinational Cell Count:     10394
+  Sequential Cell Count:         2618
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    23819.138297
+  Noncombinational Area: 18874.004564
+  Buf/Inv Area:           2633.186042
+  Total Buffer Area:          1039.45
+  Total Inverter Area:        1593.74
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  Net XLength        :      177618.22
+  Net YLength        :      181635.39
+  -----------------------------------
+  Cell Area:             42693.142861
+  Design Area:           42693.142861
+  Net Length        :       359253.62
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         16658
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: iron-04
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    7.50
+  Logic Optimization:                248.52
+  Mapping Optimization:             9742.96
+  -----------------------------------------
+  Overall Compile Time:            11942.52
+  Overall Compile Wall Clock Time:  1578.65
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

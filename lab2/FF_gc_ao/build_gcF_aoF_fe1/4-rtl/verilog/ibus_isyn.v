@@ -1,0 +1,72 @@
+// CONFIDENTIAL AND PROPRIETARY INFORMATION
+// Copyright 1996-2012 ARC International (Unpublished)
+// All Rights Reserved.
+//
+// This document, material and/or software contains confidential
+// and proprietary information of ARC International and is
+// protected by copyright, trade secret and other state, federal,
+// and international laws, and may be embodied in patents issued
+// or pending.  Its receipt or possession does not convey any
+// rights to use, reproduce, disclose its contents, or to
+// manufacture, or sell anything it may describe.  Reverse
+// engineering is prohibited, and reproduction, disclosure or use
+// without specific written authorization of ARC International is
+// strictly forbidden.  ARC and the ARC logotype are trademarks of
+// ARC International.
+// 
+// ARC Product:  ARC 600 Architecture v4.9.7
+// File version:  600 Architecture IP Library version 4.9.7, file revision 
+// ARC Chip ID:  0
+//
+// Description:
+//
+module ibus_isyn (
+
+//  INPUTS ========================================================
+
+//  System Bus Error Inputs ---------------------------------------
+
+  sys_bus_error,
+
+//  Internal Bus Error Inputs -------------------------------------
+  iarb_rerror,
+  iarb_rspval,
+  iarb_rspack,
+
+//  OUTPUTS =======================================================
+
+//  Re-Sync and Extended Bus Error Interrupt ----------------------
+
+  ext_bus_error
+
+);
+
+input   sys_bus_error; 
+input   iarb_rerror; 
+input   iarb_rspval; 
+input   iarb_rspack; 
+output  ext_bus_error; 
+
+wire    ext_bus_error; 
+
+//  ============================================================================
+//  SIGNAL DECLARATIONS 
+//  ============================================================================
+
+wire    comb_bus_error; 
+
+//  ============================================================================
+//  ARCHITECTURE
+//  ============================================================================
+
+//  Re-synchronisation is not required
+//  instead, this module will now only combine the exception signals.
+
+//  Combining all bus errors -------------------------------------------------
+
+assign comb_bus_error = sys_bus_error | 
+                        (iarb_rerror & iarb_rspval & iarb_rspack); 
+assign ext_bus_error  = comb_bus_error; 
+
+endmodule // module ibus_isyn
+

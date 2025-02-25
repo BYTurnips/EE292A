@@ -1,0 +1,523 @@
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Mon May 13 01:48:07 2024
+****************************************
+
+
+  Startpoint: ldst_dmi_req
+              (input port clocked by clk_in)
+  Endpoint: iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/i_zero_b_reg
+            (rising edge-triggered flip-flop clocked by clk_in)
+  Path Group: REGIN
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.25       1.25 f
+  ldst_dmi_req (in)                                       0.00       1.25 f
+  iarc600/idmp/ild_arb/U41/Y (OR2X1_RVT)                  0.05 *     1.30 f
+  iarc600/idmp/ild_arb/U42/Y (AO21X1_RVT)                 0.05 *     1.35 f
+  iarc600/idmp/ild_arb/U43/Y (OA22X1_RVT)                 0.07 *     1.42 f
+  iarc600/idmp/ild_arb/U44/Y (OR2X2_RVT)                  0.10 *     1.52 f
+  iarc600/iquarc/icontrol/irctl/U140/Y (NOR2X0_RVT)       0.10 *     1.62 r
+  iarc600/iquarc/icontrol/irctl/U180/Y (AND3X1_RVT)       0.07 *     1.69 r
+  iarc600/iquarc/icontrol/irctl/U183/Y (NAND2X0_RVT)      0.12 *     1.81 f
+  iarc600/iquarc/icontrol/irctl/U498/Y (OR2X1_RVT)        0.12 *     1.93 f
+  iarc600/iquarc/icontrol/irctl/U560/Y (OR4X2_RVT)        0.16 *     2.08 f
+  iarc600/iquarc/icontrol/irctl/U858/Y (OAI21X2_RVT)      0.11 *     2.19 r
+  iarc600/iquarc/icontrol/iint_unit/U115/Y (AO21X1_RVT)     0.05 *     2.24 r
+  iarc600/iquarc/icontrol/iint_unit/U116/Y (OR2X1_RVT)     0.05 *     2.29 r
+  iarc600/iquarc/icontrol/iint_unit/U117/Y (NOR4X1_RVT)     0.09 *     2.38 f
+  iarc600/iquarc/icontrol/iint_unit/U118/Y (NOR2X4_RVT)     0.11 *     2.49 r
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U29/Y (AO21X1_RVT)     0.08 *     2.56 r
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U30/Y (NOR2X0_RVT)     0.07 *     2.63 f
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U31/Y (NOR3X2_RVT)     0.11 *     2.74 r
+  iarc600/iquarc/icontrol/irctl/U690/Y (INVX4_RVT)        0.01 *     2.75 f
+  iarc600/iquarc/icontrol/irctl/U703/Y (OR4X2_RVT)        0.13 *     2.89 f
+  iarc600/iquarc/icontrol/irctl/U706/Y (NAND2X2_RVT)      0.08 *     2.96 r
+  iarc600/iquarc/icontrol/irctl/U799/Y (OA21X1_RVT)       0.06 *     3.02 r
+  iarc600/iquarc/icontrol/irctl/U800/Y (OR2X1_RVT)        0.05 *     3.07 r
+  iarc600/iquarc/icontrol/irctl/U805/Y (AOI21X2_RVT)      0.10 *     3.16 f
+  iarc600/iquarc/icontrol/irctl/U806/Y (AND2X2_RVT)       0.07 *     3.24 f
+  iarc600/iquarc/icontrol/ipcounter/U38/Y (INVX1_RVT)     0.03 *     3.27 r
+  iarc600/iquarc/icontrol/ipcounter/U39/Y (AND2X1_RVT)     0.05 *     3.32 r
+  iarc600/iquarc/icontrol/ipcounter/U41/Y (OR2X1_RVT)     0.07 *     3.39 r
+  iarc600/iquarc/iauxiliary/ihostif/U35/Y (OR2X1_RVT)     0.06 *     3.45 r
+  iarc600/iquarc/iauxiliary/ihostif/U36/Y (NOR2X0_RVT)     0.07 *     3.52 f
+  iarc600/iquarc/iauxiliary/ihostif/U51/Y (OA21X1_RVT)     0.07 *     3.59 f
+  iarc600/iquarc/iauxiliary/ihostif/U52/Y (INVX2_RVT)     0.03 *     3.62 r
+  iarc600/iquarc/iregisters/icoreregs/isync_regs/U78/Y (AND2X2_RVT)     0.08 *     3.69 r
+  iarc600/iquarc/iregisters/icoreregs/isync_regs/U79/Y (INVX1_RVT)     0.02 *     3.71 f
+  iarc600/iquarc/iregisters/icoreregs/isync_regs/U80/Y (OR2X1_RVT)     0.06 *     3.77 f
+  iarc600/iquarc/iregisters/icoreregs/isync_regs/U105/Y (OAI222X1_RVT)     0.14 *     3.91 r
+  iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U5/Y (OR2X1_RVT)     0.05 *     3.96 r
+  iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U9/Y (AO22X1_RVT)     0.07 *     4.03 r
+  iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/i_zero_b_reg/D (DFFSSRX1_RVT)     0.00 *     4.03 r
+  data arrival time                                                  4.03
+
+  clock clk_in (rise edge)                                5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/i_zero_b_reg/CLK (DFFSSRX1_RVT)     0.00     4.80 r
+  library setup time                                     -0.12       4.68
+  data required time                                                 4.68
+  --------------------------------------------------------------------------
+  data required time                                                 4.68
+  data arrival time                                                 -4.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.65
+
+
+  Startpoint: iarc_ram/iiccm_ram/U_fake_iccm
+              (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: code_dmi_rdata[6]
+            (output port clocked by clk_in)
+  Path Group: REGOUT
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iarc_ram/iiccm_ram/U_fake_iccm/clk (fake_iccm)          0.00       0.00 r
+  iarc_ram/iiccm_ram/U_fake_iccm/rd_data[6] (fake_iccm)     1.50     1.50 r
+  iarc600/iquarc/iregisters/iif_sys/iiccm_control/U9/Y (NBUFFX2_RVT)     0.03 *     1.53 r
+  code_dmi_rdata[6] (out)                                 0.00 *     1.53 r
+  data arrival time                                                  1.53
+
+  clock clk_in (rise edge)                                5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  output external delay                                  -1.25       3.55
+  data required time                                                 3.55
+  --------------------------------------------------------------------------
+  data required time                                                 3.55
+  data arrival time                                                 -1.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.02
+
+
+  Startpoint: iarc600/idmp/ildst_queue/i_sel_dat_r_reg
+              (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/i_zero_b_reg
+            (rising edge-triggered flip-flop clocked by clk_in)
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iarc600/idmp/ildst_queue/i_sel_dat_r_reg/CLK (DFFARX1_RVT)     0.00     0.00 r
+  iarc600/idmp/ildst_queue/i_sel_dat_r_reg/Q (DFFARX1_RVT)     0.23     0.23 r
+  iarc600/idmp/ildst_queue/U30/Y (NBUFFX8_RVT)            0.05 *     0.29 r
+  iarc600/idmp/ildst_queue/U31/Y (INVX1_RVT)             -0.06 *     0.23 f
+  iarc600/idmp/ildst_queue/U10/Y (OR2X1_RVT)              0.25 *     0.48 f
+  iarc600/idmp/ildst_queue/U11/Y (NOR2X0_RVT)             0.10 *     0.58 r
+  iarc600/idmp/ildst_queue/U250/Y (AO22X1_RVT)            0.08 *     0.65 r
+  iarc600/idmp/ildst_queue/U253/Y (OA21X1_RVT)            0.07 *     0.73 r
+  iarc600/idmp/ildst_queue/U255/Y (NOR2X4_RVT)            0.13 *     0.85 f
+  iarc600/iquarc/icontrol/ilsu/U_scoreboard/U6/Y (NOR2X2_RVT)     0.13 *     0.98 r
+  iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U7/Y (XOR2X2_RVT)     0.11 *     1.09 f
+  iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U39/Y (NOR2X0_RVT)     0.10 *     1.19 r
+  iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U56/Y (NOR2X0_RVT)     0.07 *     1.25 f
+  iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U57/Y (AO21X1_RVT)     0.04 *     1.30 f
+  iarc600/iquarc/icontrol/ilsu/U_scoreboard/U11/Y (AO21X1_RVT)     0.05 *     1.34 f
+  iarc600/iquarc/icontrol/irctl/U175/Y (OR2X1_RVT)        0.05 *     1.40 f
+  iarc600/iquarc/icontrol/irctl/U178/Y (OR2X1_RVT)        0.05 *     1.45 f
+  iarc600/iquarc/icontrol/irctl/U179/Y (AOI21X1_RVT)      0.08 *     1.53 r
+  iarc600/iquarc/icontrol/irctl/U986/Y (NOR2X0_RVT)       0.10 *     1.63 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U_ap_compare1/U183/Y (OR4X2_RVT)     0.15 *     1.78 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U_ap_compare1/U185/Y (AND2X1_RVT)     0.04 *     1.83 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U_ap_compare1/U187/Y (NOR4X1_RVT)     0.11 *     1.94 r
+  iarc600/iquarc/idebug_exts/U_actionpoints/U38/Y (INVX1_RVT)     0.02 *     1.96 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U40/Y (OR3X2_RVT)     0.08 *     2.04 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U43/Y (OA21X1_RVT)     0.08 *     2.12 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U49/Y (AOI21X1_RVT)     0.10 *     2.22 r
+  iarc600/iquarc/idebug_exts/U_actionpoints/U57/Y (NOR2X2_RVT)     0.09 *     2.31 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U58/Y (NOR2X2_RVT)     0.09 *     2.39 r
+  iarc600/iquarc/icontrol/irctl/U550/Y (NOR2X2_RVT)       0.08 *     2.47 f
+  iarc600/iquarc/icontrol/irctl/U554/Y (OR3X1_RVT)        0.06 *     2.53 f
+  iarc600/iquarc/icontrol/irctl/U559/Y (OA21X1_RVT)       0.08 *     2.61 f
+  iarc600/iquarc/icontrol/irctl/U560/Y (OR4X2_RVT)        0.12 *     2.73 f
+  iarc600/iquarc/icontrol/irctl/U858/Y (OAI21X2_RVT)      0.11 *     2.84 r
+  iarc600/iquarc/icontrol/iint_unit/U115/Y (AO21X1_RVT)     0.05 *     2.88 r
+  iarc600/iquarc/icontrol/iint_unit/U116/Y (OR2X1_RVT)     0.05 *     2.93 r
+  iarc600/iquarc/icontrol/iint_unit/U117/Y (NOR4X1_RVT)     0.09 *     3.02 f
+  iarc600/iquarc/icontrol/iint_unit/U118/Y (NOR2X4_RVT)     0.11 *     3.13 r
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U29/Y (AO21X1_RVT)     0.08 *     3.21 r
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U30/Y (NOR2X0_RVT)     0.07 *     3.28 f
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U31/Y (NOR3X2_RVT)     0.11 *     3.39 r
+  iarc600/iquarc/icontrol/irctl/U690/Y (INVX4_RVT)        0.01 *     3.40 f
+  iarc600/iquarc/icontrol/irctl/U703/Y (OR4X2_RVT)        0.13 *     3.53 f
+  iarc600/iquarc/icontrol/irctl/U706/Y (NAND2X2_RVT)      0.08 *     3.61 r
+  iarc600/iquarc/icontrol/irctl/U799/Y (OA21X1_RVT)       0.06 *     3.67 r
+  iarc600/iquarc/icontrol/irctl/U800/Y (OR2X1_RVT)        0.05 *     3.71 r
+  iarc600/iquarc/icontrol/irctl/U805/Y (AOI21X2_RVT)      0.10 *     3.81 f
+  iarc600/iquarc/icontrol/irctl/U806/Y (AND2X2_RVT)       0.07 *     3.88 f
+  iarc600/iquarc/icontrol/ipcounter/U38/Y (INVX1_RVT)     0.03 *     3.91 r
+  iarc600/iquarc/icontrol/ipcounter/U39/Y (AND2X1_RVT)     0.05 *     3.96 r
+  iarc600/iquarc/icontrol/ipcounter/U41/Y (OR2X1_RVT)     0.07 *     4.03 r
+  iarc600/iquarc/iauxiliary/ihostif/U35/Y (OR2X1_RVT)     0.06 *     4.09 r
+  iarc600/iquarc/iauxiliary/ihostif/U36/Y (NOR2X0_RVT)     0.07 *     4.16 f
+  iarc600/iquarc/iauxiliary/ihostif/U51/Y (OA21X1_RVT)     0.07 *     4.23 f
+  iarc600/iquarc/iauxiliary/ihostif/U52/Y (INVX2_RVT)     0.03 *     4.26 r
+  iarc600/iquarc/iregisters/icoreregs/isync_regs/U78/Y (AND2X2_RVT)     0.08 *     4.34 r
+  iarc600/iquarc/iregisters/icoreregs/isync_regs/U79/Y (INVX1_RVT)     0.02 *     4.36 f
+  iarc600/iquarc/iregisters/icoreregs/isync_regs/U80/Y (OR2X1_RVT)     0.06 *     4.42 f
+  iarc600/iquarc/iregisters/icoreregs/isync_regs/U105/Y (OAI222X1_RVT)     0.14 *     4.55 r
+  iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U5/Y (OR2X1_RVT)     0.05 *     4.61 r
+  iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U9/Y (AO22X1_RVT)     0.07 *     4.67 r
+  iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/i_zero_b_reg/D (DFFSSRX1_RVT)     0.00 *     4.67 r
+  data arrival time                                                  4.67
+
+  clock clk_in (rise edge)                                5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/i_zero_b_reg/CLK (DFFSSRX1_RVT)     0.00     4.80 r
+  library setup time                                     -0.12       4.68
+  data required time                                                 4.68
+  --------------------------------------------------------------------------
+  data required time                                                 4.68
+  data arrival time                                                 -4.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: iibus_cksyn/icksyn_sys/toggle_int_r_reg
+              (rising edge-triggered flip-flop clocked by clk_system_in)
+  Endpoint: iibus_cksyn/icksyn_sys/toggle_int_r_reg
+            (rising edge-triggered flip-flop clocked by clk_system_in)
+  Path Group: clk_system_in
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_system_in (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK (DFFARX1_RVT)     0.00     0.00 r
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/QN (DFFARX1_RVT)     0.15     0.15 r
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/D (DFFARX1_RVT)     0.00 *     0.15 r
+  data arrival time                                                  0.15
+
+  clock clk_system_in (rise edge)                        15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -0.20      14.80
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK (DFFARX1_RVT)     0.00    14.80 r
+  library setup time                                     -0.06      14.74
+  data required time                                                14.74
+  --------------------------------------------------------------------------
+  data required time                                                14.74
+  data arrival time                                                 -0.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                       14.59
+
+
+  Startpoint: iarc600/idmp/ildst_queue/i_sel_dat_r_reg
+              (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: iibus/ibus_dcbri_ahb/i_haddr_out_r_reg_9_
+            (rising edge-triggered flip-flop clocked by hclk)
+  Path Group: hclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                               10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  iarc600/idmp/ildst_queue/i_sel_dat_r_reg/CLK (DFFARX1_RVT)     0.00    10.00 r
+  iarc600/idmp/ildst_queue/i_sel_dat_r_reg/Q (DFFARX1_RVT)     0.23    10.23 r
+  iarc600/idmp/ildst_queue/U30/Y (NBUFFX8_RVT)            0.05 *    10.29 r
+  iarc600/idmp/ildst_queue/U31/Y (INVX1_RVT)             -0.06 *    10.23 f
+  iarc600/idmp/ildst_queue/U10/Y (OR2X1_RVT)              0.25 *    10.48 f
+  iarc600/idmp/ildst_queue/U11/Y (NOR2X0_RVT)             0.10 *    10.58 r
+  iarc600/idmp/ildst_queue/U12/Y (OR2X1_RVT)              0.06 *    10.64 r
+  U45/Y (NBUFFX2_RVT)                                     0.05 *    10.70 r
+  iibus/iiarb/U109/Y (OA21X1_RVT)                         0.06 *    10.76 r
+  iibus/ibus_dcbri_ahb/U41/Y (NAND2X0_RVT)                0.16 *    10.91 f
+  iibus/ibus_dcbri_ahb/U133/Y (AO21X1_RVT)                0.18 *    11.09 f
+  iibus/ibus_dcbri_ahb/U243/Y (NAND2X0_RVT)               0.80 *    11.89 r
+  iibus/ibus_dcbri_ahb/U270/Y (AO22X1_RVT)                0.07 *    11.96 r
+  iibus/ibus_dcbri_ahb/U272/Y (OR2X1_RVT)                 0.08 *    12.04 r
+  iibus/ibus_dcbri_ahb/i_haddr_out_r_reg_9_/D (DFFARX1_RVT)     0.00 *    12.04 r
+  data arrival time                                                 12.04
+
+  clock hclk (rise edge)                                 15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -0.20      14.80
+  iibus/ibus_dcbri_ahb/i_haddr_out_r_reg_9_/CLK (DFFARX1_RVT)     0.00    14.80 r
+  library setup time                                     -0.06      14.74
+  data required time                                                14.74
+  --------------------------------------------------------------------------
+  data required time                                                14.74
+  data arrival time                                                -12.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.70
+
+
+  Startpoint: ijtag_port/u_debug_port/ir_latch_r_reg_3_
+              (rising edge-triggered flip-flop clocked by jtag_tck')
+  Endpoint: ijtag_port/u_debug_port/shift_register_r_reg_6_
+            (rising edge-triggered flip-flop clocked by jtag_tck)
+  Path Group: jtag_tck
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock jtag_tck' (rise edge)                            50.00      50.00
+  clock network delay (ideal)                             0.00      50.00
+  ijtag_port/u_debug_port/ir_latch_r_reg_3_/CLK (SDFFASX1_RVT)     0.00    50.00 r
+  ijtag_port/u_debug_port/ir_latch_r_reg_3_/Q (SDFFASX1_RVT)     0.21    50.21 f
+  ijtag_port/u_debug_port/U72/Y (NAND2X0_RVT)             0.07 *    50.28 r
+  ijtag_port/u_debug_port/U73/Y (INVX1_RVT)               0.05 *    50.33 f
+  ijtag_port/u_debug_port/U95/Y (AND3X1_RVT)              0.10 *    50.43 f
+  ijtag_port/u_debug_port/U96/Y (AND2X1_RVT)              0.20 *    50.63 f
+  ijtag_port/u_debug_port/U130/Y (AO21X1_RVT)             0.11 *    50.74 f
+  ijtag_port/u_debug_port/U131/Y (AOI22X1_RVT)            0.09 *    50.83 r
+  ijtag_port/u_debug_port/U133/Y (AO222X1_RVT)            0.12 *    50.95 r
+  ijtag_port/u_debug_port/shift_register_r_reg_6_/SE (SDFFASX1_RVT)     0.00 *    50.95 r
+  data arrival time                                                 50.95
+
+  clock jtag_tck (rise edge)                            100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  inter-clock uncertainty                                -5.20      94.80
+  ijtag_port/u_debug_port/shift_register_r_reg_6_/CLK (SDFFASX1_RVT)     0.00    94.80 r
+  library setup time                                     -0.12      94.68
+  data required time                                                94.68
+  --------------------------------------------------------------------------
+  data required time                                                94.68
+  data arrival time                                                -50.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                       43.74
+
+
+  Startpoint: xirq_n_9 (input port clocked by clk_in)
+  Endpoint: iio_flops/l_irq_9_reg
+            (rising edge-triggered flip-flop clocked by clk_in)
+  Path Group: REGIN
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.25       1.25 f
+  xirq_n_9 (in)                                           0.00       1.25 f
+  iio_flops/l_irq_9_reg/D (DFFASX1_RVT)                   0.00 *     1.25 f
+  data arrival time                                                  1.25
+
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  iio_flops/l_irq_9_reg/CLK (DFFASX1_RVT)                 0.00       0.05 r
+  library hold time                                       0.02       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -1.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.18
+
+
+  Startpoint: iarc600/iquarc/iauxiliary/ixaux_regs/power_toggle_reg
+              (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: power_toggle
+            (output port clocked by clk_in)
+  Path Group: REGOUT
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iarc600/iquarc/iauxiliary/ixaux_regs/power_toggle_reg/CLK (DFFARX1_RVT)     0.00     0.00 r
+  iarc600/iquarc/iauxiliary/ixaux_regs/power_toggle_reg/Q (DFFARX1_RVT)     0.24     0.24 f
+  power_toggle (out)                                      0.00 *     0.24 f
+  data arrival time                                                  0.24
+
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                  -1.25      -1.20
+  data required time                                                -1.20
+  --------------------------------------------------------------------------
+  data required time                                                -1.20
+  data arrival time                                                 -0.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.44
+
+
+  Startpoint: iarc600/iquarc/icontrol/ipcounter/i_p3_target_buffer_r_reg_11_
+              (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: iarc600/iquarc/icontrol/ipcounter/i_p4_target_buffer_r_reg_11_
+            (rising edge-triggered flip-flop clocked by clk_in)
+  Path Group: clk_in
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iarc600/iquarc/icontrol/ipcounter/i_p3_target_buffer_r_reg_11_/CLK (SDFFARX1_RVT)     0.00     0.00 r
+  iarc600/iquarc/icontrol/ipcounter/i_p3_target_buffer_r_reg_11_/QN (SDFFARX1_RVT)     0.14     0.14 f
+  iarc600/iquarc/icontrol/ipcounter/i_p4_target_buffer_r_reg_11_/D (DFFASX1_RVT)     0.00 *     0.14 f
+  data arrival time                                                  0.14
+
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  iarc600/iquarc/icontrol/ipcounter/i_p4_target_buffer_r_reg_11_/CLK (DFFASX1_RVT)     0.00     0.05 r
+  library hold time                                       0.00       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: iibus_cksyn/icksyn_sys/toggle_int_r_reg
+              (rising edge-triggered flip-flop clocked by clk_system_in)
+  Endpoint: iibus_cksyn/icksyn_sys/toggle_int_r_reg
+            (rising edge-triggered flip-flop clocked by clk_system_in)
+  Path Group: clk_system_in
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_system_in (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK (DFFARX1_RVT)     0.00     0.00 r
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/QN (DFFARX1_RVT)     0.14     0.14 f
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/D (DFFARX1_RVT)     0.00 *     0.14 f
+  data arrival time                                                  0.14
+
+  clock clk_system_in (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK (DFFARX1_RVT)     0.00     0.05 r
+  library hold time                                       0.00       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: iarc600/idmp/ildst_queue/i_sel_dat_r_reg
+              (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: iibus/ibus_dcbri_ahb/i_hwdata_top_r_reg_11_
+            (rising edge-triggered flip-flop clocked by hclk)
+  Path Group: hclk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                               15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  iarc600/idmp/ildst_queue/i_sel_dat_r_reg/CLK (DFFARX1_RVT)     0.00    15.00 r
+  iarc600/idmp/ildst_queue/i_sel_dat_r_reg/Q (DFFARX1_RVT)     0.23    15.23 r
+  iarc600/idmp/ildst_queue/U30/Y (NBUFFX8_RVT)            0.06 *    15.28 r
+  iarc600/idmp/ildst_queue/U161/Y (NAND2X0_RVT)          -0.38 *    14.91 f
+  iarc600/idmp/ildst_queue/U162/Y (OAI21X1_RVT)           0.08 *    14.99 r
+  iibus/iiarb/U50/Y (NBUFFX2_RVT)                         0.05 *    15.04 r
+  iibus/ibus_dcbri_ahb/i_hwdata_top_r_reg_11_/D (DFFARX1_RVT)     0.00 *    15.04 r
+  data arrival time                                                 15.04
+
+  clock hclk (rise edge)                                 15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                       0.05      15.05
+  iibus/ibus_dcbri_ahb/i_hwdata_top_r_reg_11_/CLK (DFFARX1_RVT)     0.00    15.05 r
+  library hold time                                      -0.02      15.03
+  data required time                                                15.03
+  --------------------------------------------------------------------------
+  data required time                                                15.03
+  data arrival time                                                -15.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: iio_flops/i_jtag_trst_synchro_r_reg/CLK
+              (internal path startpoint clocked by jtag_tck)
+  Endpoint: iio_flops/i_jtag_trst_r1_reg
+            (rising edge-triggered flip-flop clocked by jtag_tck)
+  Path Group: jtag_tck
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock jtag_tck (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  iio_flops/i_jtag_trst_synchro_r_reg/CLK (DFFASX1_RVT)     0.00     0.00 r
+  iio_flops/i_jtag_trst_synchro_r_reg/Q (DFFASX1_RVT)     0.20       0.20 f
+  iio_flops/i_jtag_trst_r1_reg/D (DFFASX1_RVT)            0.00 *     0.20 f
+  data arrival time                                                  0.20
+
+  clock jtag_tck (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  iio_flops/i_jtag_trst_r1_reg/CLK (DFFASX1_RVT)          0.00       0.05 r
+  library hold time                                       0.01       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.14
+
+
+    Net: iarc600/iquarc/iregisters/icoreregs/isync_regs/n113
+
+    max_transition         1.02
+  - Transition Time        1.02
+  ------------------------------
+    Slack                  0.00  (MET)
+
+
+    Net: i_code_ram_rdata[25]
+
+    max_fanout            20.00
+  - Fanout                 1.43
+  ------------------------------
+    Slack                 18.57  (MET)
+
+
+    Net: i_rst_a
+
+    max_capacitance      104.00
+  - Capacitance           65.74
+  ------------------------------
+    Slack                 38.26  (MET)
+
+
+    Design: cpu_isle
+
+    max_leakage_power          0.00
+  - Current Leakage Power  1337811840.00
+  ----------------------------------
+    Slack                  -1337811840.00  (VIOLATED)
+
+
+    Net: ick_gen/clk_in
+
+    multiport_net          0.00
+  - actual cost            1.00
+  ------------------------------
+    Violation             -1.00  (VIOLATED)
+
+
+Min pulse width constraints
+
+                       Required      Actual
+  Pin                pulse width   pulse width   Slack           Scenario
+--------------------------------------------------------------------------------
+  iibus/iiarb/clk_gate_fifo_ptr_r_reg/latch/CLK(low)  0.33  2.05  1.72 (MET)
+
+1

@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : timing_requirements
+        -attributes
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Sat Apr 13 16:45:32 2024
+****************************************
+
+Description                            Setup               Hold
+--------------------------------------------------------------------------------
+TIMING EXCEPTION                       FALSE               FALSE
+	-from    arc_start_a
+TIMING EXCEPTION                       FALSE               FALSE
+	-from    clk_in\
+	-to      jtag_tck
+TIMING EXCEPTION                       FALSE               FALSE
+	-from    jtag_tck\
+	-to      clk_in
+TIMING EXCEPTION                       FALSE               FALSE
+	-from    clk_system_in\
+	-to      jtag_tck
+TIMING EXCEPTION                       FALSE               FALSE
+	-from    jtag_tck\
+	-to      clk_system_in
+TIMING EXCEPTION                       FALSE               FALSE
+	-from    hclk\
+	-to      jtag_tck
+TIMING EXCEPTION                       FALSE               FALSE
+	-from    jtag_tck\
+	-to      hclk
+TIMING EXCEPTION                       cycles=4            cycles=3(end)
+	-from    { hgrant\
+		   hrdata[0]\
+		   hrdata[10]\
+		   hrdata[11]\
+		   hrdata[12]\
+		   hrdata[13]\
+		   hrdata[14]\
+		   hrdata[15]\
+		   hrdata[16]\
+		   hrdata[17]\
+		   hrdata[18]\
+		   hrdata[19]\
+		   hrdata[1]\
+		   hrdata[20]\
+		   hrdata[21]\
+		   hrdata[22]\
+		   hrdata[23]\
+		   hrdata[24]\
+		   hrdata[25]\
+		   hrdata[26]\
+		   hrdata[27]\
+		   hrdata[28]\
+		   hrdata[29]\
+		   hrdata[2]\
+		   hrdata[30]\
+		   hrdata[31]\
+		   hrdata[3]\
+		   hrdata[4]\
+		   hrdata[5]\
+		   hrdata[6]\
+		   hrdata[7]\
+		   hrdata[8]\
+		   hrdata[9]\
+		   hready\
+		   hresp[0]\
+		   hresp[1] }\
+	-to      clk_in
+
+1

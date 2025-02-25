@@ -1,0 +1,33 @@
+#! /usr/bin/env bash
+set -euo pipefail
+#=========================================================================
+# mflowgen-run
+#=========================================================================
+# Generator : /home/users/brionqye/Documents/EE292A/ee292a_lab1/mflowgen/mflowgen/core/build_orchestrator.py
+
+# Pre
+
+rm -f .time_end
+date +%Y-%m%d-%H%M-%S > .time_start
+MFLOWGEN_STEP_HOME=$PWD
+
+# Commands
+
+source concat_rtl
+cat concat_rtl.v > outputs/design.v
+cat verilog/extutil.v > outputs/extutil.v
+cat verilog/jtag_defs.v > outputs/jtag_defs.v
+cat verilog/arcutil.v > outputs/arcutil.v
+cat verilog/arcutil_pkg_defines.v > outputs/arcutil_pkg_defines.v
+cat verilog/asmutil.v > outputs/asmutil.v
+cat verilog/che_util.v > outputs/che_util.v
+cat verilog/xdefs.v > outputs/xdefs.v
+cat verilog/uxdefs.v > outputs/uxdefs.v
+cat verilog/ext_msb.v > outputs/ext_msb.v
+cat verilog/arc600constants.v > outputs/arc600constants.v
+
+# Post
+
+cd $MFLOWGEN_STEP_HOME
+date +%Y-%m%d-%H%M-%S > .time_end
+

@@ -1,0 +1,37 @@
+digraph {
+label="";
+labelloc="t";
+fontsize=60;
+size="8.5;11";
+ratio="fill";
+margin=0;
+pad=1;
+rankdir="TB";
+concentrate=true;
+splines=polyline;
+center=true;
+nodesep=1.2;
+ranksep=0.8;
+arc_ram_lib [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ {  } | \narc_ram_lib\n\n | { <o_arc_rams_db> arc_rams.db | <o_arc_rams_lib> arc_rams.lib } }", color=black ];
+constraints [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ {  } | \nconstraints\n\n | { <o_constraints_tcl> constraints.tcl } }", color=black ];
+custom_dc_scripts [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ {  } | \ncustom_dc_scripts\n\n | { <o_generate_results_tcl> generate-results.tcl } }", color=black ];
+info [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ {  } | \ninfo\n\n | {  } }", color=black ];
+rtl [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ {  } | \nrtl\n\n | { <o_arc600constants_v> arc600constants.v | <o_arcutil_v> arcutil.v | <o_arcutil_pkg_defines_v> arcutil_pkg_defines.v | <o_asmutil_v> asmutil.v | <o_che_util_v> che_util.v | <o_design_v> design.v | <o_ext_msb_v> ext_msb.v | <o_extutil_v> extutil.v | <o_jtag_defs_v> jtag_defs.v | <o_uxdefs_v> uxdefs.v | <o_xdefs_v> xdefs.v } }", color=black ];
+skywater_130nm [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ {  } | \nskywater-130nm\n\n | { <o_adk> adk } }", color=black ];
+synopsys_dc_synthesis [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ { <i_adk> adk | <i_arc600constants_v> arc600constants.v | <i_arc_rams_db> arc_rams.db | <i_arcutil_v> arcutil.v | <i_arcutil_pkg_defines_v> arcutil_pkg_defines.v | <i_asmutil_v> asmutil.v | <i_che_util_v> che_util.v | <i_constraints_tcl> constraints.tcl | <i_design_upf> design.upf | <i_design_v> design.v | <i_ext_msb_v> ext_msb.v | <i_extutil_v> extutil.v | <i_generate_results_tcl> generate-results.tcl | <i_jtag_defs_v> jtag_defs.v | <i_run_saif> run.saif | <i_uxdefs_v> uxdefs.v | <i_xdefs_v> xdefs.v } | \nsynopsys-dc-synthesis\n\n | { <o_design_namemap> design.namemap | <o_design_sdc> design.sdc | <o_design_svf> design.svf | <o_design_upf> design.upf | <o_design_v> design.v } }", color=black ];
+skywater_130nm:o_adk:s -> synopsys_dc_synthesis:i_adk:n [ arrowsize=2, penwidth=2 ];
+rtl:o_arc600constants_v:s -> synopsys_dc_synthesis:i_arc600constants_v:n [ arrowsize=2, penwidth=2 ];
+arc_ram_lib:o_arc_rams_db:s -> synopsys_dc_synthesis:i_arc_rams_db:n [ arrowsize=2, penwidth=2 ];
+rtl:o_arcutil_v:s -> synopsys_dc_synthesis:i_arcutil_v:n [ arrowsize=2, penwidth=2 ];
+rtl:o_arcutil_pkg_defines_v:s -> synopsys_dc_synthesis:i_arcutil_pkg_defines_v:n [ arrowsize=2, penwidth=2 ];
+rtl:o_asmutil_v:s -> synopsys_dc_synthesis:i_asmutil_v:n [ arrowsize=2, penwidth=2 ];
+rtl:o_che_util_v:s -> synopsys_dc_synthesis:i_che_util_v:n [ arrowsize=2, penwidth=2 ];
+constraints:o_constraints_tcl:s -> synopsys_dc_synthesis:i_constraints_tcl:n [ arrowsize=2, penwidth=2 ];
+rtl:o_design_v:s -> synopsys_dc_synthesis:i_design_v:n [ arrowsize=2, penwidth=2 ];
+rtl:o_ext_msb_v:s -> synopsys_dc_synthesis:i_ext_msb_v:n [ arrowsize=2, penwidth=2 ];
+rtl:o_extutil_v:s -> synopsys_dc_synthesis:i_extutil_v:n [ arrowsize=2, penwidth=2 ];
+custom_dc_scripts:o_generate_results_tcl:s -> synopsys_dc_synthesis:i_generate_results_tcl:n [ arrowsize=2, penwidth=2 ];
+rtl:o_jtag_defs_v:s -> synopsys_dc_synthesis:i_jtag_defs_v:n [ arrowsize=2, penwidth=2 ];
+rtl:o_uxdefs_v:s -> synopsys_dc_synthesis:i_uxdefs_v:n [ arrowsize=2, penwidth=2 ];
+rtl:o_xdefs_v:s -> synopsys_dc_synthesis:i_xdefs_v:n [ arrowsize=2, penwidth=2 ];
+}

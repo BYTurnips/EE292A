@@ -1,0 +1,488 @@
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Sun Apr 14 10:21:50 2024
+****************************************
+
+
+  Startpoint: ldst_dmi_req
+              (input port clocked by clk_in)
+  Endpoint: iarc_ram/iiccm_ram/U_fake_iccm
+            (rising edge-triggered flip-flop clocked by clk_in)
+  Path Group: REGIN
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  ldst_dmi_req (in)                                       0.00       0.50 f
+  iarc600/idmp/ild_arb/U9/Y (sky130_fd_sc_hd__inv_12)     0.03 *     0.53 r
+  iarc600/idmp/ild_arb/U25/Y (sky130_fd_sc_hd__nand3_4)     0.06 *     0.59 f
+  iarc600/idmp/ild_arb/U45/Y (sky130_fd_sc_hd__nand2_4)     0.08 *     0.67 r
+  iarc600/idmp/ild_arb/U52/Y (sky130_fd_sc_hd__nand2_8)     0.08 *     0.75 f
+  iarc600/iquarc/icontrol/irctl/U949/Y (sky130_fd_sc_hd__nor2_8)     0.18 *     0.93 r
+  iarc600/idmp/imem_align_chk/U8/Y (sky130_fd_sc_hd__nand3_4)     0.09 *     1.02 f
+  iarc600/idmp/imem_align_chk/U9/Y (sky130_fd_sc_hd__inv_4)     0.10 *     1.12 r
+  iarc600/iquarc/icontrol/iint_unit/U242/Y (sky130_fd_sc_hd__inv_4)     0.04 *     1.16 f
+  iarc600/iquarc/icontrol/iint_unit/U536/Y (sky130_fd_sc_hd__nand2_4)     0.05 *     1.22 r
+  iarc600/iquarc/icontrol/iint_unit/U188/Y (sky130_fd_sc_hd__nand2_4)     0.06 *     1.27 f
+  iarc600/iquarc/icontrol/iint_unit/U172/Y (sky130_fd_sc_hd__nand2_8)     0.11 *     1.39 r
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U24/Y (sky130_fd_sc_hd__o21ai_4)     0.07 *     1.46 f
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U25/Y (sky130_fd_sc_hd__inv_6)     0.09 *     1.55 r
+  iarc600/iquarc/icontrol/irctl/U904/Y (sky130_fd_sc_hd__nand3_4)     0.07 *     1.62 f
+  iarc600/iquarc/icontrol/irctl/U758/Y (sky130_fd_sc_hd__nand2_4)     0.11 *     1.73 r
+  iarc600/iquarc/icontrol/irctl/U189/Y (sky130_fd_sc_hd__inv_12)     0.08 *     1.81 f
+  iarc600/iquarc/icontrol/ipcounter/U117/Y (sky130_fd_sc_hd__nand2_4)     0.09 *     1.89 r
+  iarc600/iquarc/icontrol/ipcounter/U353/Y (sky130_fd_sc_hd__nand2_4)     0.08 *     1.97 f
+  iarc600/iquarc/icontrol/ipcounter/U71/Y (sky130_fd_sc_hd__nand2_1)     0.08 *     2.05 r
+  iarc600/iquarc/icontrol/ipcounter/U348/Y (sky130_fd_sc_hd__nand3_2)     0.07 *     2.12 f
+  iarc600/iquarc/icontrol/ipcounter/U427/Y (sky130_fd_sc_hd__inv_2)     0.06 *     2.18 r
+  iarc600/iquarc/icontrol/ipcounter/U281/Y (sky130_fd_sc_hd__nand3_4)     0.09 *     2.28 f
+  iarc600/iquarc/iregisters/iif_sys/iiccm_control/U315/Y (sky130_fd_sc_hd__nand2_2)     0.07 *     2.35 r
+  iarc600/iquarc/iregisters/iif_sys/iiccm_control/U314/Y (sky130_fd_sc_hd__nand2_1)     0.03 *     2.37 f
+  iarc_ram/iiccm_ram/U_fake_iccm/address[5] (fake_iccm)     0.00 *     2.37 f
+  data arrival time                                                  2.37
+
+  clock clk_in (rise edge)                                2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.20       1.80
+  iarc_ram/iiccm_ram/U_fake_iccm/clk (fake_iccm)          0.00       1.80 r
+  library setup time                                     -0.21       1.59
+  data required time                                                 1.59
+  --------------------------------------------------------------------------
+  data required time                                                 1.59
+  data arrival time                                                 -2.37
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.78
+
+
+  Startpoint: iarc_ram/iiccm_ram/U_fake_iccm
+              (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: code_dmi_rdata[31]
+            (output port clocked by clk_in)
+  Path Group: REGOUT
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iarc_ram/iiccm_ram/U_fake_iccm/clk (fake_iccm)          0.00       0.00 r
+  iarc_ram/iiccm_ram/U_fake_iccm/rd_data[31] (fake_iccm)     1.50     1.50 f
+  iarc600/iquarc/iregisters/iif_sys/iiccm_control/U469/Y (sky130_fd_sc_hd__inv_8)     0.02 *     1.52 r
+  iarc600/iquarc/iregisters/iif_sys/iiccm_control/U380/Y (sky130_fd_sc_hd__inv_1)     0.01 *     1.54 f
+  code_dmi_rdata[31] (out)                                0.00 *     1.54 f
+  data arrival time                                                  1.54
+
+  clock clk_in (rise edge)                                2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.20       1.80
+  output external delay                                  -0.50       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.54
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: iarc600/idmp/ildst_queue/i_sel_dat_r_reg
+              (rising edge-triggered flip-flop clocked by clk_in)
+  Endpoint: iarc_ram/iiccm_ram/U_fake_iccm
+            (rising edge-triggered flip-flop clocked by clk_in)
+  Path Group: clk_in
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iarc600/idmp/ildst_queue/i_sel_dat_r_reg/CLK (sky130_fd_sc_hd__dfrtp_2)     0.00     0.00 r
+  iarc600/idmp/ildst_queue/i_sel_dat_r_reg/Q (sky130_fd_sc_hd__dfrtp_2)     0.48     0.48 f
+  iarc600/idmp/ildst_queue/U194/Y (sky130_fd_sc_hd__inv_2)     0.07 *     0.55 r
+  iarc600/idmp/ildst_queue/U200/Y (sky130_fd_sc_hd__nand3_2)     0.06 *     0.60 f
+  iarc600/idmp/ildst_queue/U36/Y (sky130_fd_sc_hd__inv_1)     0.06 *     0.67 r
+  iarc600/idmp/ildst_queue/U51/Y (sky130_fd_sc_hd__nand2_2)     0.05 *     0.72 f
+  iarc600/idmp/ildst_queue/U10/Y (sky130_fd_sc_hd__nand3_2)     0.07 *     0.79 r
+  iarc600/idmp/ildst_queue/U8/Y (sky130_fd_sc_hd__nand2_4)     0.08 *     0.87 f
+  iarc600/iquarc/icontrol/ilsu/U_scoreboard/U9/Y (sky130_fd_sc_hd__nor2_8)     0.14 *     1.01 r
+  iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U6/Y (sky130_fd_sc_hd__xnor2_4)     0.16 *     1.18 r
+  iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U11/Y (sky130_fd_sc_hd__o21ai_2)     0.08 *     1.26 f
+  iarc600/iquarc/icontrol/U11/X (sky130_fd_sc_hd__buf_6)     0.12 *     1.38 f
+  iarc600/iquarc/icontrol/irctl/U210/Y (sky130_fd_sc_hd__inv_2)     0.05 *     1.43 r
+  iarc600/iquarc/icontrol/irctl/U820/Y (sky130_fd_sc_hd__nand3_4)     0.07 *     1.51 f
+  iarc600/iquarc/icontrol/irctl/U1053/Y (sky130_fd_sc_hd__nor2_4)     0.14 *     1.64 r
+  iarc600/iquarc/icontrol/irctl/U1057/Y (sky130_fd_sc_hd__a21oi_4)     0.09 *     1.73 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U_ap_compare1/U377/Y (sky130_fd_sc_hd__o22ai_4)     0.20 *     1.93 r
+  iarc600/iquarc/idebug_exts/U_actionpoints/U63/Y (sky130_fd_sc_hd__nand3_2)     0.13 *     2.06 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U59/Y (sky130_fd_sc_hd__nand4_2)     0.09 *     2.15 r
+  iarc600/iquarc/idebug_exts/U_actionpoints/U45/Y (sky130_fd_sc_hd__nor2_2)     0.06 *     2.21 f
+  iarc600/iquarc/idebug_exts/U_actionpoints/U65/Y (sky130_fd_sc_hd__nor2_4)     0.14 *     2.35 r
+  iarc600/iquarc/icontrol/irctl/U859/Y (sky130_fd_sc_hd__inv_2)     0.05 *     2.39 f
+  iarc600/iquarc/icontrol/irctl/U860/Y (sky130_fd_sc_hd__nand3_2)     0.07 *     2.46 r
+  iarc600/iquarc/icontrol/irctl/U861/Y (sky130_fd_sc_hd__nand2_4)     0.09 *     2.55 f
+  iarc600/iquarc/icontrol/iint_unit/U189/Y (sky130_fd_sc_hd__nand2_4)     0.09 *     2.64 r
+  iarc600/iquarc/icontrol/iint_unit/U172/Y (sky130_fd_sc_hd__nand2_8)     0.08 *     2.73 f
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U24/Y (sky130_fd_sc_hd__o21ai_4)     0.17 *     2.89 r
+  iarc600/iquarc/iauxiliary/iaux_regs/U_flags/U25/Y (sky130_fd_sc_hd__inv_6)     0.07 *     2.97 f
+  iarc600/iquarc/icontrol/irctl/U904/Y (sky130_fd_sc_hd__nand3_4)     0.07 *     3.03 r
+  iarc600/iquarc/icontrol/irctl/U758/Y (sky130_fd_sc_hd__nand2_4)     0.08 *     3.11 f
+  iarc600/iquarc/icontrol/irctl/U189/Y (sky130_fd_sc_hd__inv_12)     0.13 *     3.24 r
+  iarc600/iquarc/icontrol/ipcounter/U354/Y (sky130_fd_sc_hd__nand2_8)     0.08 *     3.32 f
+  iarc600/iquarc/icontrol/ipcounter/U392/Y (sky130_fd_sc_hd__nand2_8)     0.08 *     3.41 r
+  iarc600/iquarc/icontrol/ipcounter/U296/Y (sky130_fd_sc_hd__inv_6)     0.05 *     3.46 f
+  iarc600/iquarc/icontrol/ipcounter/U69/Y (sky130_fd_sc_hd__nand2_2)     0.05 *     3.51 r
+  iarc600/iquarc/icontrol/ipcounter/U239/Y (sky130_fd_sc_hd__nand3_2)     0.06 *     3.56 f
+  iarc600/iquarc/icontrol/ipcounter/U429/Y (sky130_fd_sc_hd__inv_2)     0.06 *     3.63 r
+  iarc600/iquarc/icontrol/ipcounter/U410/Y (sky130_fd_sc_hd__nand3_4)     0.09 *     3.72 f
+  iarc600/iquarc/iregisters/iif_sys/iiccm_control/U307/Y (sky130_fd_sc_hd__nand2_2)     0.07 *     3.79 r
+  iarc600/iquarc/iregisters/iif_sys/iiccm_control/U306/Y (sky130_fd_sc_hd__nand2_1)     0.03 *     3.82 f
+  iarc_ram/iiccm_ram/U_fake_iccm/address[6] (fake_iccm)     0.00 *     3.82 f
+  data arrival time                                                  3.82
+
+  clock clk_in (rise edge)                                2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.20       1.80
+  iarc_ram/iiccm_ram/U_fake_iccm/clk (fake_iccm)          0.00       1.80 r
+  library setup time                                     -0.21       1.59
+  data required time                                                 1.59
+  --------------------------------------------------------------------------
+  data required time                                                 1.59
+  data arrival time                                                 -3.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.23
+
+
+  Startpoint: iibus_cksyn/icksyn_sys/toggle_int_r_reg
+              (rising edge-triggered flip-flop clocked by clk_system_in)
+  Endpoint: iibus_cksyn/icksyn_sys/toggle_int_r_reg
+            (rising edge-triggered flip-flop clocked by clk_system_in)
+  Path Group: clk_system_in
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_system_in (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00     0.00 r
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/Q (sky130_fd_sc_hd__dfrtp_1)     0.44     0.44 r
+  iibus_cksyn/icksyn_sys/U4/Y (sky130_fd_sc_hd__inv_2)     0.03 *     0.47 f
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/D (sky130_fd_sc_hd__dfrtp_1)     0.00 *     0.47 f
+  data arrival time                                                  0.47
+
+  clock clk_system_in (rise edge)                         2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.20       1.80
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00     1.80 r
+  library setup time                                     -0.07       1.73
+  data required time                                                 1.73
+  --------------------------------------------------------------------------
+  data required time                                                 1.73
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.26
+
+
+  Startpoint: iibus/ibus_dcbri_ahb/i_state_r_reg_2_
+              (rising edge-triggered flip-flop clocked by hclk)
+  Endpoint: iibus/ibus_dcbri_ahb/i_hwdata_out_r_reg_1_
+            (rising edge-triggered flip-flop clocked by hclk)
+  Path Group: hclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock hclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iibus/ibus_dcbri_ahb/i_state_r_reg_2_/CLK (sky130_fd_sc_hd__dfrbp_1)     0.00     0.00 r
+  iibus/ibus_dcbri_ahb/i_state_r_reg_2_/Q (sky130_fd_sc_hd__dfrbp_1)     0.57     0.57 f
+  iibus/ibus_dcbri_ahb/U122/Y (sky130_fd_sc_hd__nand2_1)     0.11 *     0.68 r
+  iibus/ibus_dcbri_ahb/U532/Y (sky130_fd_sc_hd__nand2b_1)     0.12 *     0.80 r
+  iibus/ibus_dcbri_ahb/U131/Y (sky130_fd_sc_hd__inv_2)     0.08 *     0.87 f
+  iibus/ibus_dcbri_ahb/U152/Y (sky130_fd_sc_hd__nand2_4)     0.07 *     0.94 r
+  iibus/ibus_dcbri_ahb/U153/Y (sky130_fd_sc_hd__nand2_4)     0.12 *     1.06 f
+  iibus/ibus_dcbri_ahb/U999/Y (sky130_fd_sc_hd__inv_6)     0.10 *     1.15 r
+  iibus/ibus_dcbri_ahb/U316/Y (sky130_fd_sc_hd__nand3_4)     0.12 *     1.28 f
+  iibus/ibus_dcbri_ahb/U314/X (sky130_fd_sc_hd__buf_12)     0.20 *     1.48 f
+  iibus/ibus_dcbri_ahb/U776/Y (sky130_fd_sc_hd__a22oi_1)     0.15 *     1.62 r
+  iibus/ibus_dcbri_ahb/U778/Y (sky130_fd_sc_hd__nand3_1)     0.09 *     1.71 f
+  iibus/ibus_dcbri_ahb/i_hwdata_out_r_reg_1_/D (sky130_fd_sc_hd__dfrtp_1)     0.00 *     1.71 f
+  data arrival time                                                  1.71
+
+  clock hclk (rise edge)                                  2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.20       1.80
+  iibus/ibus_dcbri_ahb/i_hwdata_out_r_reg_1_/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00     1.80 r
+  library setup time                                     -0.09       1.71
+  data required time                                                 1.71
+  --------------------------------------------------------------------------
+  data required time                                                 1.71
+  data arrival time                                                 -1.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ijtag_port/u_debug_port/ir_latch_r_reg_3_
+              (rising edge-triggered flip-flop clocked by jtag_tck')
+  Endpoint: ijtag_port/u_debug_port/shift_register_r_reg_4_
+            (rising edge-triggered flip-flop clocked by jtag_tck)
+  Path Group: jtag_tck
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock jtag_tck' (rise edge)                            50.00      50.00
+  clock network delay (ideal)                             0.00      50.00
+  ijtag_port/u_debug_port/ir_latch_r_reg_3_/CLK (sky130_fd_sc_hd__dfstp_1)     0.00    50.00 r
+  ijtag_port/u_debug_port/ir_latch_r_reg_3_/Q (sky130_fd_sc_hd__dfstp_1)     0.60    50.60 r
+  ijtag_port/u_debug_port/U64/Y (sky130_fd_sc_hd__nand2_1)     0.12 *    50.72 f
+  ijtag_port/u_debug_port/U85/Y (sky130_fd_sc_hd__nor2_1)     0.30 *    51.02 r
+  ijtag_port/u_debug_port/U95/X (sky130_fd_sc_hd__and2_2)     0.46 *    51.48 r
+  ijtag_port/u_debug_port/U97/X (sky130_fd_sc_hd__a21o_1)     0.17 *    51.65 r
+  ijtag_port/u_debug_port/U98/Y (sky130_fd_sc_hd__a22oi_1)     0.08 *    51.73 f
+  ijtag_port/u_debug_port/U99/Y (sky130_fd_sc_hd__nand2_1)     0.10 *    51.83 r
+  ijtag_port/u_debug_port/U11/Y (sky130_fd_sc_hd__nor2b_1)     0.14 *    51.96 r
+  ijtag_port/u_debug_port/shift_register_r_reg_4_/D (sky130_fd_sc_hd__dfrtp_1)     0.00 *    51.96 r
+  data arrival time                                                 51.96
+
+  clock jtag_tck (rise edge)                            100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  inter-clock uncertainty                                -5.20      94.80
+  ijtag_port/u_debug_port/shift_register_r_reg_4_/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00    94.80 r
+  library setup time                                     -0.06      94.74
+  data required time                                                94.74
+  --------------------------------------------------------------------------
+  data required time                                                94.74
+  data arrival time                                                -51.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                       42.78
+
+
+  Startpoint: ctrl_cpu_start
+              (input port clocked by clk_in)
+  Endpoint: iio_flops/i_start_synchro_r_reg
+            (rising edge-triggered flip-flop clocked by clk_in)
+  Path Group: REGIN
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  ctrl_cpu_start (in)                                     0.00       0.50 f
+  iio_flops/i_start_synchro_r_reg/D (sky130_fd_sc_hd__dfrtp_1)     0.00 *     0.50 f
+  data arrival time                                                  0.50
+
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  iio_flops/i_start_synchro_r_reg/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00     0.05 r
+  library hold time                                       0.01       0.06
+  data required time                                                 0.06
+  --------------------------------------------------------------------------
+  data required time                                                 0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: iibus/ibus_dcbri_ahb/i_hwdata_lagged_r_reg_0_
+              (rising edge-triggered flip-flop clocked by hclk)
+  Endpoint: hwdata[0] (output port clocked by hclk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock hclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iibus/ibus_dcbri_ahb/i_hwdata_lagged_r_reg_0_/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00     0.00 r
+  iibus/ibus_dcbri_ahb/i_hwdata_lagged_r_reg_0_/Q (sky130_fd_sc_hd__dfrtp_1)     0.34     0.34 r
+  hwdata[0] (out)                                         0.00 *     0.34 r
+  data arrival time                                                  0.34
+
+  clock hclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  output external delay                                  -0.60      -0.55
+  data required time                                                -0.55
+  --------------------------------------------------------------------------
+  data required time                                                -0.55
+  data arrival time                                                 -0.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.89
+
+
+  Startpoint: ijtag_port/u_sys_clk_sync/i_rst_mask_r1_r_reg/CLK
+              (internal path startpoint clocked by clk_in)
+  Endpoint: ijtag_port/u_sys_clk_sync/i_rst_mask_r2_r_reg
+            (rising edge-triggered flip-flop clocked by clk_in)
+  Path Group: clk_in
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ijtag_port/u_sys_clk_sync/i_rst_mask_r1_r_reg/CLK (sky130_fd_sc_hd__dfstp_1)     0.00     0.00 r
+  ijtag_port/u_sys_clk_sync/i_rst_mask_r1_r_reg/Q (sky130_fd_sc_hd__dfstp_1)     0.40     0.40 f
+  ijtag_port/u_sys_clk_sync/i_rst_mask_r2_r_reg/D (sky130_fd_sc_hd__dfstp_1)     0.00 *     0.40 f
+  data arrival time                                                  0.40
+
+  clock clk_in (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  ijtag_port/u_sys_clk_sync/i_rst_mask_r2_r_reg/CLK (sky130_fd_sc_hd__dfstp_1)     0.00     0.05 r
+  library hold time                                       0.03       0.08
+  data required time                                                 0.08
+  --------------------------------------------------------------------------
+  data required time                                                 0.08
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.32
+
+
+  Startpoint: iibus_cksyn/icksyn_sys/toggle_int_r_reg
+              (rising edge-triggered flip-flop clocked by clk_system_in)
+  Endpoint: iibus_cksyn/icksyn_sys/toggle_int_r_reg
+            (rising edge-triggered flip-flop clocked by clk_system_in)
+  Path Group: clk_system_in
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_system_in (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00     0.00 r
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/Q (sky130_fd_sc_hd__dfrtp_1)     0.44     0.44 r
+  iibus_cksyn/icksyn_sys/U4/Y (sky130_fd_sc_hd__inv_2)     0.03 *     0.47 f
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/D (sky130_fd_sc_hd__dfrtp_1)     0.00 *     0.47 f
+  data arrival time                                                  0.47
+
+  clock clk_system_in (rise edge)                         0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  iibus_cksyn/icksyn_sys/toggle_int_r_reg/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00     0.05 r
+  library hold time                                       0.00       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.43
+
+
+  Startpoint: iibus/ibus_dcbri_ahb/i_hwdata_out_r_reg_9_
+              (rising edge-triggered flip-flop clocked by hclk)
+  Endpoint: iibus/ibus_dcbri_ahb/i_hwdata_lagged_r_reg_9_
+            (rising edge-triggered flip-flop clocked by hclk)
+  Path Group: hclk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock hclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iibus/ibus_dcbri_ahb/i_hwdata_out_r_reg_9_/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00     0.00 r
+  iibus/ibus_dcbri_ahb/i_hwdata_out_r_reg_9_/Q (sky130_fd_sc_hd__dfrtp_1)     0.40     0.40 r
+  iibus/ibus_dcbri_ahb/i_hwdata_lagged_r_reg_9_/D (sky130_fd_sc_hd__dfrtp_1)     0.00 *     0.40 r
+  data arrival time                                                  0.40
+
+  clock hclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  iibus/ibus_dcbri_ahb/i_hwdata_lagged_r_reg_9_/CLK (sky130_fd_sc_hd__dfrtp_1)     0.00     0.05 r
+  library hold time                                      -0.02       0.03
+  data required time                                                 0.03
+  --------------------------------------------------------------------------
+  data required time                                                 0.03
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.37
+
+
+  Startpoint: iio_flops/i_jtag_trst_synchro_r_reg/CLK
+              (internal path startpoint clocked by jtag_tck)
+  Endpoint: iio_flops/i_jtag_trst_r1_reg
+            (rising edge-triggered flip-flop clocked by jtag_tck)
+  Path Group: jtag_tck
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock jtag_tck (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  iio_flops/i_jtag_trst_synchro_r_reg/CLK (sky130_fd_sc_hd__dfstp_1)     0.00     0.00 r
+  iio_flops/i_jtag_trst_synchro_r_reg/Q (sky130_fd_sc_hd__dfstp_1)     0.40     0.40 f
+  iio_flops/i_jtag_trst_r1_reg/D (sky130_fd_sc_hd__dfstp_1)     0.00 *     0.40 f
+  data arrival time                                                  0.40
+
+  clock jtag_tck (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  iio_flops/i_jtag_trst_r1_reg/CLK (sky130_fd_sc_hd__dfstp_1)     0.00     0.05 r
+  library hold time                                       0.02       0.07
+  data required time                                                 0.07
+  --------------------------------------------------------------------------
+  data required time                                                 0.07
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.33
+
+
+    Net: iarc600/iquarc/ialu/ibigalu/n936
+
+    max_transition         1.49
+  - Transition Time        1.44
+  ------------------------------
+    Slack                  0.05  (MET)
+
+
+    Net: i_code_ram_rdata[0]
+
+    max_fanout            20.00
+  - Fanout                 0.00
+  ------------------------------
+    Slack                 20.00  (MET)
+
+
+    Net: iarc600/iquarc/ialu/ibigalu/n936
+
+    max_capacitance        0.19
+  - Capacitance            0.19
+  ------------------------------
+    Slack                  0.00  (MET)
+
+
+    Design: cpu_isle
+
+    max_leakage_power          0.00
+  - Current Leakage Power     94.05
+  ----------------------------------
+    Slack                    -94.05  (VIOLATED)
+
+
+    Net: ick_gen/clk_in
+
+    multiport_net          0.00
+  - actual cost            1.00
+  ------------------------------
+    Violation             -1.00  (VIOLATED)
+
+
+Min pulse width constraints
+
+                       Required      Actual
+  Pin                pulse width   pulse width   Slack           Scenario
+--------------------------------------------------------------------------------
+  iarc600/iquarc/icontrol/iint_unit/i_p2state_r_reg_4_/CLK(high)  0.58  0.70  0.12 (MET)
+
+1

@@ -1,0 +1,15 @@
+build_dir: 0-arc_ram_lib
+build_id: '0'
+commands:
+- cp arc_rams.lib outputs/arc_rams.lib
+- cp arc_rams.db  outputs/arc_rams.db
+edges_i: {}
+edges_o:
+  arc_rams.db:
+  - f: arc_rams.db
+    step: 6-synopsys-dc-synthesis
+name: arc_ram_lib
+outputs:
+- arc_rams.lib
+- arc_rams.db
+source: /home/users/brionqye/Documents/EE292A/ee292a_lab2/design/arc_ram_lib

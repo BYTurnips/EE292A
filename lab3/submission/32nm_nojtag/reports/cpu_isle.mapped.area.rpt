@@ -1,0 +1,224 @@
+ 
+****************************************
+Report : area
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Mon May 13 03:39:12 2024
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt0p85v25c (File: /home/users/brionqye/Documents/EE292A/ee292a_lab3/build_nojtag/6-synopsys-dc-synthesis/inputs/adk/stdcells.db)
+    arc_rams (File: /home/users/brionqye/Documents/EE292A/ee292a_lab3/build_nojtag/6-synopsys-dc-synthesis/inputs/arc_rams.db)
+
+Number of ports:                        25015
+Number of nets:                         30325
+Number of cells:                        16204
+Number of combinational cells:          10394
+Number of sequential cells:              2616
+Number of macros/black boxes:               2
+Number of buf/inv:                       1758
+Number of references:                       8
+
+Combinational area:              23819.138297
+Buf/Inv area:                     2633.186042
+Noncombinational area:           18874.004564
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 42693.142861
+Total area:                 undefined
+
+Core Area:                     75064
+Aspect Ratio:                 1.0017
+Utilization Ratio:            0.5748
+
+
+The above information was reported from the logical library. The following are from the physical library:
+
+  Total moveable cell area: 43150.5
+  Total fixed cell area: 0.0
+  Total physical cell area: 43150.5
+ Core area: 0.000, 0.000, 273.752, 274.208
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------------------------------------
+cpu_isle                          42693.1429    100.0     16.5194      0.0000  0.0000  cpu_isle
+iarc600                           38086.0204     89.2      0.0000      0.0000  0.0000  cpu_isle_arc600_0
+iarc600/idmp                       3175.7835      7.4      0.0000      0.0000  0.0000  cpu_isle_dmp_0
+iarc600/idmp/idccm_control          888.2333      2.1    527.0947    177.9008  0.0000  cpu_isle_dccm_control_0
+iarc600/idmp/idccm_control/U_readsort   171.5472     0.4   171.5472     0.0000 0.0000  cpu_isle_readsort_1
+iarc600/idmp/idccm_control/clk_gate_i_d_addr_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_dccm_control_1
+iarc600/idmp/idccm_control/clk_gate_i_ldst_raddr_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_dccm_control_0
+iarc600/idmp/idebug_access          195.6909      0.5    195.6909      0.0000  0.0000  cpu_isle_debug_access_0
+iarc600/idmp/idecoder                21.6022      0.1     21.6022      0.0000  0.0000  cpu_isle_decoder_0
+iarc600/idmp/ild_arb                129.8676      0.3    129.8676      0.0000  0.0000  cpu_isle_ld_arb_0
+iarc600/idmp/ildst_queue           1928.1906      4.5    632.3103   1089.2612  0.0000  cpu_isle_ldst_queue_0
+iarc600/idmp/ildst_queue/U_readsort   171.5472     0.4   171.5472      0.0000  0.0000  cpu_isle_readsort_0
+iarc600/idmp/ildst_queue/clk_gate_i_a_load_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_0
+iarc600/idmp/ildst_queue/clk_gate_i_b_load_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_5
+iarc600/idmp/ildst_queue/clk_gate_i_fifo_addr0_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_3
+iarc600/idmp/ildst_queue/clk_gate_i_fifo_addr1_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_2
+iarc600/idmp/ildst_queue/clk_gate_i_fifo_addr2_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_1
+iarc600/idmp/ildst_queue/clk_gate_i_fifo_store3_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_4
+iarc600/idmp/imem_align_chk          12.1989      0.0     12.1989      0.0000  0.0000  cpu_isle_mem_align_chk_0
+iarc600/iquarc                    34910.2369     81.8     41.1713      0.0000  0.0000  cpu_isle_quarc_0
+iarc600/iquarc/ialu                6452.9703     15.1      8.1326      0.0000  0.0000  cpu_isle_alu_0
+iarc600/iquarc/ialu/ibigalu        2089.8261      4.9   1537.8254    227.7130  0.0000  cpu_isle_bigalu_0
+iarc600/iquarc/ialu/ibigalu/U_adder   318.4424     0.7    40.1548      0.0000  0.0000  cpu_isle_adder_0
+iarc600/iquarc/ialu/ibigalu/U_adder/DP_OP_7J21_122_4863   278.2877     0.7   278.2877     0.0000 0.0000 cpu_isle_adder_DP_OP_7J21_122_4863_0_0
+iarc600/iquarc/ialu/ibigalu/clk_gate_i_wbdata_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_bigalu_0
+iarc600/iquarc/ialu/ixalu          4355.0116     10.2   2082.2018    989.1285  0.0000  cpu_isle_xalu_0
+iarc600/iquarc/ialu/ixalu/add_x_55   165.1936     0.4    165.1936      0.0000  0.0000  cpu_isle_xalu_DW01_add_J9_1_0
+iarc600/iquarc/ialu/ixalu/add_x_56   172.3096     0.4    172.3096      0.0000  0.0000  cpu_isle_xalu_DW01_add_J9_0_0
+iarc600/iquarc/ialu/ixalu/clk_gate_i_m1val_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_3
+iarc600/iquarc/ialu/ixalu/clk_gate_i_mul_state_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_0
+iarc600/iquarc/ialu/ixalu/clk_gate_i_multiply_res_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_2
+iarc600/iquarc/ialu/ixalu/clk_gate_i_multiply_res_r_reg_0     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_1
+iarc600/iquarc/ialu/ixalu/u_mul32x5   922.7968     2.2   922.7968      0.0000  0.0000  cpu_isle_mult32x5cs_0
+iarc600/iquarc/iauxiliary          2745.0094      6.4     20.3315      0.0000  0.0000  cpu_isle_auxiliary_0
+iarc600/iquarc/iauxiliary/iaux_regs   699.6584     1.6   238.8954     14.2321  0.0000  cpu_isle_aux_regs_0
+iarc600/iquarc/iauxiliary/iaux_regs/U_debug    39.6465     0.1    25.4144    14.2321 0.0000 cpu_isle_debug_0
+iarc600/iquarc/iauxiliary/iaux_regs/U_flags   406.8845     1.0   205.0942   190.0997 0.0000 cpu_isle_flags_0
+iarc600/iquarc/iauxiliary/iaux_regs/U_flags/clk_gate_i_status_l1_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_flags_1
+iarc600/iquarc/iauxiliary/iaux_regs/U_flags/clk_gate_i_status_l2_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_flags_0
+iarc600/iquarc/iauxiliary/ihostif   148.9284      0.3    148.9284      0.0000  0.0000  cpu_isle_hostif_0
+iarc600/iquarc/iauxiliary/itimer0   935.2499      2.2    322.2546    493.0394  0.0000  cpu_isle_timer0_0
+iarc600/iquarc/iauxiliary/itimer0/add_x_1   102.4200     0.2   102.4200     0.0000 0.0000 cpu_isle_timer0_DW01_inc_J20_0_0
+iarc600/iquarc/iauxiliary/itimer0/clk_gate_i_tcontrol_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_timer0_1
+iarc600/iquarc/iauxiliary/itimer0/clk_gate_i_timer_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_timer0_0
+iarc600/iquarc/iauxiliary/itimer0/clk_gate_i_tlimit_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_timer0_2
+iarc600/iquarc/iauxiliary/ixaux_regs   940.8411     2.2   793.9459   135.2046  0.0000  cpu_isle_xaux_regs_0
+iarc600/iquarc/iauxiliary/ixaux_regs/clk_gate_i_int_vector_base_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_xaux_regs_0
+iarc600/iquarc/iauxiliary/ixaux_regs/clk_gate_i_ldst_ram_base_addr_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_xaux_regs_1
+iarc600/iquarc/icontrol            9216.2781     21.6     17.2818      0.0000  0.0000  cpu_isle_control_0
+iarc600/iquarc/icontrol/ick_ctrl     61.7570      0.1     26.1768     35.5802  0.0000  cpu_isle_ck_ctrl_0
+iarc600/iquarc/icontrol/iint_unit  1400.8417      3.3    878.0675    505.2383  0.0000  cpu_isle_int_unit_0
+iarc600/iquarc/icontrol/iint_unit/clk_gate_i_aux_hint_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_int_unit_2
+iarc600/iquarc/icontrol/iint_unit/clk_gate_i_aux_lev_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_int_unit_0
+iarc600/iquarc/icontrol/iint_unit/clk_gate_i_p2ilevel1_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_int_unit_1
+iarc600/iquarc/icontrol/ilsu        468.8957      1.1      5.3370      0.0000  0.0000  cpu_isle_lsu_0
+iarc600/iquarc/icontrol/ilsu/U_scoreboard   463.5587     1.1    30.7514     0.0000 0.0000 cpu_isle_scorebd_0
+iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo   432.8072     1.0    60.7404     0.0000 0.0000 cpu_isle_scorfifo_0
+iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U_scoritem0   196.4533     0.5   119.4477    71.1603 0.0000 cpu_isle_scoritem_0
+iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U_scoritem0/clk_gate_i_item_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_scoritem_1_0
+iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U_scoritem3   175.6135     0.4    98.6079    71.1603 0.0000 cpu_isle_scoritem_1
+iarc600/iquarc/icontrol/ilsu/U_scoreboard/U_scorfifo/U_scoritem3/clk_gate_i_item_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_scoritem_0_0
+iarc600/iquarc/icontrol/ipcounter  2766.1033      6.5   1015.3053   1539.0961  0.0000  cpu_isle_pcounter_0
+iarc600/iquarc/icontrol/ipcounter/add_x_1   104.7073     0.2   104.7073     0.0000 0.0000 cpu_isle_pcounter_DW01_add_J6_0_0
+iarc600/iquarc/icontrol/ipcounter/add_x_452    66.0774     0.2    66.0774     0.0000 0.0000 cpu_isle_pcounter_DW01_inc_J6_0_0
+iarc600/iquarc/icontrol/ipcounter/clk_gate_i_currentpc_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_3
+iarc600/iquarc/icontrol/ipcounter/clk_gate_i_currentpc_to_cache_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_2
+iarc600/iquarc/icontrol/ipcounter/clk_gate_i_last_pc_plus_len_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_0
+iarc600/iquarc/icontrol/ipcounter/clk_gate_i_p2b_pc_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_6
+iarc600/iquarc/icontrol/ipcounter/clk_gate_i_p3_target_buffer_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_5
+iarc600/iquarc/icontrol/ipcounter/clk_gate_i_p4_target_buffer_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_4
+iarc600/iquarc/icontrol/ipcounter/clk_gate_i_restart_addr_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_1
+iarc600/iquarc/icontrol/irctl      4194.3926      9.8   2621.2412   1538.0795  0.0000  cpu_isle_rctl_0
+iarc600/iquarc/icontrol/irctl/clk_gate_i_p2_iw_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_0
+iarc600/iquarc/icontrol/irctl/clk_gate_i_p2b_branch_iv_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_5
+iarc600/iquarc/icontrol/irctl/clk_gate_i_p2b_has_dslot_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_1
+iarc600/iquarc/icontrol/irctl/clk_gate_i_p3_sync_inst_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_4
+iarc600/iquarc/icontrol/irctl/clk_gate_i_p4_br_or_bbit_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_2
+iarc600/iquarc/icontrol/irctl/clk_gate_i_p4_wba_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_3
+iarc600/iquarc/icontrol/ixrctl      307.0060      0.7    202.8069     92.5084  0.0000  cpu_isle_xrctl_0
+iarc600/iquarc/icontrol/ixrctl/clk_gate_ix_idecode2b_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_xrctl_0
+iarc600/iquarc/icontrol/ixrctl/clk_gate_ix_idecode3_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_xrctl_1
+iarc600/iquarc/idebug_exts         3855.1104      9.0      2.0332      0.0000  0.0000  cpu_isle_debug_exts_0
+iarc600/iquarc/idebug_exts/U_actionpoints  3853.0772     9.0   432.5531  1280.8858 0.0000 cpu_isle_actionpoints_0
+iarc600/iquarc/idebug_exts/U_actionpoints/U_ap_compare0  1052.9186     2.5   449.0724   603.8462 0.0000 cpu_isle_ap_compare_0
+iarc600/iquarc/idebug_exts/U_actionpoints/U_ap_compare1  1051.6479     2.5   447.8017   603.8462 0.0000 cpu_isle_ap_compare_1
+iarc600/iquarc/idebug_exts/U_actionpoints/clk_gate_i_ap_control_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_4
+iarc600/iquarc/idebug_exts/U_actionpoints/clk_gate_i_ap_control_r_reg_0     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_3
+iarc600/iquarc/idebug_exts/U_actionpoints/clk_gate_i_ap_mask_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_0
+iarc600/iquarc/idebug_exts/U_actionpoints/clk_gate_i_ap_mask_r_reg_0     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_5
+iarc600/iquarc/idebug_exts/U_actionpoints/clk_gate_i_ap_value_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_1
+iarc600/iquarc/idebug_exts/U_actionpoints/clk_gate_i_p2_currentpc_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_2
+iarc600/iquarc/iregisters         12515.8298     29.3    114.3648      0.0000  0.0000  cpu_isle_registers_0
+iarc600/iquarc/iregisters/icoreregs 10340.8654    24.2    16.2652      0.0000  0.0000  cpu_isle_coreregs_0
+iarc600/iquarc/iregisters/icoreregs/icr_int  2942.4793     6.9  1773.4169  1145.6812 0.0000 cpu_isle_cr_int_0
+iarc600/iquarc/iregisters/icoreregs/icr_int/clk_gate_i_ext_s2val_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_1
+iarc600/iquarc/iregisters/icoreregs/icr_int/clk_gate_i_s1val_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_2
+iarc600/iquarc/iregisters/icoreregs/icr_int/clk_gate_i_s2val_inverted_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_0
+iarc600/iquarc/iregisters/icoreregs/icr_int/clk_gate_i_stval_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_3
+iarc600/iquarc/iregisters/icoreregs/iloopcnt  1059.0181     2.5   159.8566   503.2051 0.0000 cpu_isle_loopcnt_0
+iarc600/iquarc/iregisters/icoreregs/iloopcnt/DP_OP_13J11_122_8061   172.8179     0.4   172.8179     0.0000 0.0000 cpu_isle_loopcnt_DP_OP_13J11_122_8061_J11_0_0
+iarc600/iquarc/iregisters/icoreregs/iloopcnt/DP_OP_14J11_123_8061   167.7350     0.4   167.7350     0.0000 0.0000 cpu_isle_loopcnt_DP_OP_14J11_123_8061_J11_0_0
+iarc600/iquarc/iregisters/icoreregs/iloopcnt/U_dec32    37.8675     0.1    37.8675     0.0000 0.0000 cpu_isle_dec32_0
+iarc600/iquarc/iregisters/icoreregs/iloopcnt/clk_gate_i_lp_cnt_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_loopcnt_0
+iarc600/iquarc/iregisters/icoreregs/iloopcnt/clk_gate_i_lp_end_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_loopcnt_2
+iarc600/iquarc/iregisters/icoreregs/iloopcnt/clk_gate_i_lp_start_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_loopcnt_1
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap  5660.8036    13.3   151.9781    14.2321 0.0000 cpu_isle_regfile_3p_wrap_0
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p  5494.5934    12.9  1940.1353  3449.2425 0.0000 cpu_isle_regfile_3p_0
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_address_a_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_0
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_address_b_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_17
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_0_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_13
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_10_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_9
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_11_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_8
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_12_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_7
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_13_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_6
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_14_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_5
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_15_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_4
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_1_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_12
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_26_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_3
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_27_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_2
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_28_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_1
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_29_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_16
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_2_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_11
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_30_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_15
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_31_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_14
+iarc600/iquarc/iregisters/icoreregs/iregfile_3p_wrap/U_regfile_3p/clk_gate_regfile_mem_3_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_10
+iarc600/iquarc/iregisters/icoreregs/isync_regs   662.2993     1.6   378.9287   277.5253 0.0000 cpu_isle_sync_regs_0
+iarc600/iquarc/iregisters/icoreregs/isync_regs/clk_gate_i_p5_wbdata_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_sync_regs_0
+iarc600/iquarc/iregisters/iif_sys  1427.7810      3.3      4.0663      0.0000  0.0000  cpu_isle_if_sys_0
+iarc600/iquarc/iregisters/iif_sys/iiccm_control  1423.7147     3.3   879.5924   526.5864 0.0000 cpu_isle_iccm_control_0
+iarc600/iquarc/iregisters/iif_sys/iiccm_control/clk_gate_i_dmp_sex_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_iccm_control_0
+iarc600/iquarc/iregisters/iif_sys/iiccm_control/clk_gate_i_iccm_drd_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_iccm_control_2
+iarc600/iquarc/iregisters/iif_sys/iiccm_control/clk_gate_i_p1iw_last_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_iccm_control_1
+iarc600/iquarc/iregisters/iinst_align   346.1441     0.8   212.2102   128.0886 0.0000  cpu_isle_inst_align_0
+iarc600/iquarc/iregisters/iinst_align/clk_gate_i_buffer_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_inst_align_0
+iarc600/iquarc/iregisters/ixcoreregs   286.6744     0.7   286.6744     0.0000  0.0000  cpu_isle_xcoreregs_0
+iarc600/iquarc/iuserextensions       83.8675      0.2      0.0000      0.0000  0.0000  cpu_isle_userextensions_0
+iarc600/iquarc/iuserextensions/ieia_common    83.8675     0.2    49.5581    28.4641 0.0000 cpu_isle_eia_common_0
+iarc600/iquarc/iuserextensions/ieia_common/clk_gate_xflags_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_eia_common_0
+iarc_ram                             32.5304      0.1      0.0000      0.0000  0.0000  cpu_isle_arc_ram_0
+iarc_ram/idccm_ram                   16.2652      0.0     16.2652      0.0000  0.0000  cpu_isle_dccm_ram_0
+iarc_ram/iiccm_ram                   16.2652      0.0     16.2652      0.0000  0.0000  cpu_isle_iccm_ram_0
+ick_gen                              26.4310      0.1     11.1823     15.2486  0.0000  cpu_isle_ck_gen_0
+iibus                              3603.2537      8.4     10.1658      0.0000  0.0000  cpu_isle_ibus_0
+iibus/ibus_dcbri_ahb               3306.9218      7.7   1361.4494   1892.8645  0.0000  cpu_isle_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_0
+iibus/ibus_dcbri_ahb/clk_gate_i_2nd_wr_sz_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_3
+iibus/ibus_dcbri_ahb/clk_gate_i_eop_old_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_6
+iibus/ibus_dcbri_ahb/clk_gate_i_eop_out_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_7
+iibus/ibus_dcbri_ahb/clk_gate_i_eop_top_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_8
+iibus/ibus_dcbri_ahb/clk_gate_i_hsize_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_4
+iibus/ibus_dcbri_ahb/clk_gate_i_hwdata_lagged_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_2
+iibus/ibus_dcbri_ahb/clk_gate_i_state_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_0
+iibus/ibus_dcbri_ahb/clk_gate_i_t_rdata_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_5
+iibus/ibus_dcbri_ahb/clk_gate_i_wrap_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_1
+iibus/iiarb                         286.1662      0.7    251.8567     28.4641  0.0000  cpu_isle_ibus_iarb_ADDR_WIDTH24_DATA_WIDTH32_BE_WIDTH4_FIFO_DEPTH4_0
+iibus/iiarb/clk_gate_fifo_ptr_r_reg     5.8453     0.0     0.0000      5.8453  0.0000  cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_iarb_ADDR_WIDTH24_DATA_WIDTH32_BE_WIDTH4_FIFO_DEPTH4_0
+iibus_cksyn                          94.5416      0.2      0.0000      0.0000  0.0000  cpu_isle_ibus_cksyn_0
+iibus_cksyn/icksyn_main              86.1548      0.2     17.2818     63.0277  0.0000  cpu_isle_ibus_cksyn_main_0
+iibus_cksyn/icksyn_main/clk_gate_sync_mask_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cksyn_main_0
+iibus_cksyn/icksyn_sys                8.3868      0.0      1.2707      7.1160  0.0000  cpu_isle_ibus_cksyn_sys_0
+iio_flops                           169.0058      0.4     10.4199    158.5859  0.0000  cpu_isle_io_flops_0
+ijtag_port                          664.8407      1.6      8.6409      0.0000  0.0000  cpu_isle_jtag_port_0
+ijtag_port/u_debug_port             537.2604      1.3    123.7681    384.2657  0.0000  cpu_isle_debug_port_0
+ijtag_port/u_debug_port/clk_gate_ir_latch_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_1
+ijtag_port/u_debug_port/clk_gate_ir_sreg_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_2
+ijtag_port/u_debug_port/clk_gate_shift_register_r_reg     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_0
+ijtag_port/u_debug_port/clk_gate_shift_register_r_reg_0     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_4
+ijtag_port/u_debug_port/clk_gate_shift_register_r_reg_1     5.8453     0.0     0.0000     5.8453 0.0000 cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_3
+ijtag_port/u_sys_clk_sync             3.3039      0.0      3.3039      0.0000  0.0000  cpu_isle_sys_clk_sync_0
+ijtag_port/u_tap_controller         115.6355      0.3     80.0554     35.5802  0.0000  cpu_isle_tap_controller_0
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------------------------------------
+Total                                                  23819.1383  18874.0046  0.0000
+
+1

@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Sat Apr 13 13:56:57 2024
+****************************************
+
+
+    Design: cpu_isle
+
+    max_leakage_power          0.00
+  - Current Leakage Power     72.99
+  ----------------------------------
+    Slack                    -72.99  (VIOLATED)
+
+
+    Net: ick_gen/clk_in
+
+    multiport_net          0.00
+  - actual cost            1.00
+  ------------------------------
+    Violation             -1.00  (VIOLATED)
+
+
+    Net: ick_gen/clk_system_in
+
+    multiport_net          0.00
+  - actual cost            1.00
+  ------------------------------
+    Violation             -1.00  (VIOLATED)
+
+
+1

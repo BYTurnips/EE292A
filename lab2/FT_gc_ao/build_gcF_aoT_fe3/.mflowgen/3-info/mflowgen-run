@@ -1,0 +1,33 @@
+#! /usr/bin/env bash
+set -euo pipefail
+#=========================================================================
+# mflowgen-run
+#=========================================================================
+# Generator : /home/users/brionqye/Documents/EE292A/ee292a_lab1/mflowgen/mflowgen/core/build_orchestrator.py
+
+# Pre
+
+rm -f .time_end
+date +%Y-%m%d-%H%M-%S > .time_start
+MFLOWGEN_STEP_HOME=$PWD
+export design_name=cpu_isle
+export clock_period=0
+export construct_path=/home/users/brionqye/Documents/EE292A/ee292a_lab2/design/construct.py
+export adk=skywater-130nm-adk.v2021
+export adk_view=view-standard
+
+# Commands
+
+echo "Design name      -- $design_name"
+echo "Clock period     -- $clock_period"
+echo "ADK              -- $adk"
+echo "ADK view         -- $adk_view"
+echo
+echo "Constructed from -- $construct_path"
+echo
+
+# Post
+
+cd $MFLOWGEN_STEP_HOME
+date +%Y-%m%d-%H%M-%S > .time_end
+

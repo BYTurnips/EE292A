@@ -1,0 +1,471 @@
+/*
+ CONFIDENTIAL AND PROPRIETARY INFORMATION
+ Copyright 1997-2005 ARC International (Unpublished)
+ All Rights Reserved.
+
+ This document, material and/or software contains confidential
+ and proprietary information of ARC International and is
+ protected by copyright, trade secret and other state, federal,
+ and international laws, and may be embodied in patents issued
+ or pending.  Its receipt or possession does not convey any
+ rights to use, reproduce, disclose its contents, or to
+ manufacture, or sell anything it may describe.  Reverse
+ engineering is prohibited, and reproduction, disclosure or use
+ without specific written authorization of ARC International is
+ strictly forbidden.  ARC and the ARC logotype are trademarks of
+ ARC International.
+ 
+ ARC Product:  @@PRODUCT_NAME@@ v@@VERSION_NUMBER@@
+ File version: $Revision$
+ ARC Chip ID:  0
+
+ Description:
+
+ Fake library for ARC600 cache RAMs 
+*/
+
+library (arc_rams) {
+
+    date : "19-07-1996 11:29:15"
+
+    technology (cmos) ;
+    delay_model : generic_cmos ;
+    revision : 3.2 ;
+    bus_naming_style : "%s[%d]" ;
+    simulation : false ;
+    time_unit : "1ns" ;
+    voltage_unit : "1V" ;
+    current_unit : "1A" ;
+    pulling_resistance_unit : "1ohm" ;
+    capacitive_load_unit (1,pf) ;
+    default_max_fanout : 20.000 ;
+    default_fanout_load : 1.00000 ;
+    default_inout_pin_cap : 1.000000 ;
+    default_inout_pin_fall_res : 0.000000 ;
+    default_inout_pin_rise_res : 0.000000 ;
+    default_input_pin_cap : 1.000000 ;
+    default_intrinsic_fall : 0.000000 ;
+    default_intrinsic_rise : 0.000000 ;
+    default_output_pin_cap : 0.000000 ;
+    default_output_pin_fall_res : 0.000000 ;
+    default_output_pin_rise_res : 0.000000 ;
+    default_slope_fall : 0.000000 ;
+    default_slope_rise : 0.000000 ;
+    k_process_drive_fall : 1.000000 ;
+    k_process_drive_rise : 1.000000 ;
+    k_process_intrinsic_fall : 1.000000 ;
+    k_process_intrinsic_rise : 1.000000 ;
+    k_process_min_pulse_width_high : 1.000000 ;
+    k_process_min_pulse_width_low : 1.000000 ;
+    k_process_min_period : 1.000000 ;
+    k_process_hold_rise : 1.000000 ;
+    k_process_hold_fall : 1.000000 ;
+    k_process_setup_rise : 1.000000 ;
+    k_process_setup_fall : 1.000000 ;
+    k_process_recovery_rise : 1.000000 ;
+    k_process_recovery_fall : 1.000000 ;
+
+ type(bus64) {base_type : array; data_type : bit; bit_width : 64; bit_from : 63; bit_to : 0; downto : true;}
+ type(bus32) {base_type : array; data_type : bit; bit_width : 32; bit_from : 31; bit_to : 0; downto : true;}
+ type(bus31) {base_type : array; data_type : bit; bit_width : 31; bit_from : 30; bit_to : 0; downto : true;}
+ type(bus30) {base_type : array; data_type : bit; bit_width : 30; bit_from : 29; bit_to : 0; downto : true;}
+ type(bus29) {base_type : array; data_type : bit; bit_width : 29; bit_from : 28; bit_to : 0; downto : true;}
+ type(bus28) {base_type : array; data_type : bit; bit_width : 28; bit_from : 27; bit_to : 0; downto : true;}
+ type(bus27) {base_type : array; data_type : bit; bit_width : 27; bit_from : 26; bit_to : 0; downto : true;}
+ type(bus26) {base_type : array; data_type : bit; bit_width : 26; bit_from : 25; bit_to : 0; downto : true;}
+ type(bus25) {base_type : array; data_type : bit; bit_width : 25; bit_from : 24; bit_to : 0; downto : true;}
+ type(bus24) {base_type : array; data_type : bit; bit_width : 24; bit_from : 23; bit_to : 0; downto : true;}
+ type(bus23) {base_type : array; data_type : bit; bit_width : 23; bit_from : 22; bit_to : 0; downto : true;}
+ type(bus22) {base_type : array; data_type : bit; bit_width : 22; bit_from : 21; bit_to : 0; downto : true;}
+ type(bus21) {base_type : array; data_type : bit; bit_width : 21; bit_from : 20; bit_to : 0; downto : true;}
+ type(bus20) {base_type : array; data_type : bit; bit_width : 20; bit_from : 19; bit_to : 0; downto : true;}
+ type(bus19) {base_type : array; data_type : bit; bit_width : 19; bit_from : 18; bit_to : 0; downto : true;}
+ type(bus18) {base_type : array; data_type : bit; bit_width : 18; bit_from : 17; bit_to : 0; downto : true;}
+ type(bus17) {base_type : array; data_type : bit; bit_width : 17; bit_from : 16; bit_to : 0; downto : true;}
+ type(bus16) {base_type : array; data_type : bit; bit_width : 16; bit_from : 15; bit_to : 0; downto : true;}
+ type(bus15) {base_type : array; data_type : bit; bit_width : 15; bit_from : 14; bit_to : 0; downto : true;}
+ type(bus14) {base_type : array; data_type : bit; bit_width : 14; bit_from : 13; bit_to : 0; downto : true;}
+ type(bus13) {base_type : array; data_type : bit; bit_width : 13; bit_from : 12; bit_to : 0; downto : true;}
+ type(bus12) {base_type : array; data_type : bit; bit_width : 12; bit_from : 11; bit_to : 0; downto : true;}
+ type(bus11) {base_type : array; data_type : bit; bit_width : 11; bit_from : 10; bit_to : 0; downto : true;}
+ type(bus10) {base_type : array; data_type : bit; bit_width : 10; bit_from : 9; bit_to : 0; downto : true;}
+ type(bus9)  {base_type : array; data_type : bit; bit_width : 9; bit_from : 8; bit_to : 0; downto : true;}
+ type(bus8)  {base_type : array; data_type : bit; bit_width : 8; bit_from : 7; bit_to : 0; downto : true;}
+ type(bus7)  {base_type : array; data_type : bit; bit_width : 7; bit_from : 6; bit_to : 0; downto : true;}
+ type(bus6)  {base_type : array; data_type : bit; bit_width : 6; bit_from : 5; bit_to : 0; downto : true;}
+ type(bus5)  {base_type : array; data_type : bit; bit_width : 5; bit_from : 4; bit_to : 0; downto : true;}
+ type(bus4)  {base_type : array; data_type : bit; bit_width : 4; bit_from : 3; bit_to : 0; downto : true;}
+ type(bus3)  {base_type : array; data_type : bit; bit_width : 3; bit_from : 2; bit_to : 0; downto : true;}
+ type(bus2)  {base_type : array; data_type : bit; bit_width : 2; bit_from : 1; bit_to : 0; downto : true;}
+
+ /* These are imaginary buses - only here to prevent errors when tag and data ram blocks are not in use */
+ type(bus1)  {base_type : array; data_type : bit; bit_width : 2; bit_from : 1; bit_to : 0; downto : true;}
+ type(bus0)  {base_type : array; data_type : bit; bit_width : 2; bit_from : 1; bit_to : 0; downto : true;}
+
+/* General Purpose Asyc RAM, used in Memory contoller, Code and LDST RAM. */
+
+cell(jk_sram) {
+    area        :   0;
+    dont_use    :   true;
+    dont_touch  :   true;
+
+/* --------------------------------- Write enable pin ------------------------- */
+    bus(nWE) {
+        bus_type : bus4
+        direction : input;
+        capacitance : 0;
+        }
+
+/* ---------------------------- Chip-Enable pin ------------------------- */
+    pin(nCE) {
+        direction : input;
+        capacitance : 0;
+        fanout_load : 1;
+        timing( ) { /* tsu - address setup */
+            related_bus_pins : "nWE";
+            timing_type : "setup_falling";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* tah - address hold */
+            related_bus_pins : "nWE";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+/* ---------------------------- Output-Enable pin ------------------------- */
+    pin(nOE) {
+        direction : input ;
+        capacitance : 0;
+        fanout_load : 1;
+        timing( ) { /* tsu  - WE setup */
+            related_bus_pins : "nWE";
+            timing_type : "setup_falling";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* th  - WE hold */
+            related_bus_pins : "nWE";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+/* ---------------------------- Address bus ------------------------- */
+    bus(A) {
+        bus_type : bus17
+        direction : input ;
+        capacitance : 0;
+        fanout_load : 1;
+        timing( ) { /* tsu  - CK_EN setup */
+            related_bus_pins : "nWE";
+            timing_type : "setup_falling";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* th  - CK_EN hold */
+            related_bus_pins : "nWE";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+
+/* ------------------------------ inout data pin ---------------------- */
+
+   bus(D) {
+        bus_type : bus32
+        direction : inout ;
+        capacitance : 0;
+        fanout_load : 1;
+        timing( ) { /* tsu  - CK_EN setup */
+            related_bus_pins : "nWE";
+            timing_type : "setup_falling";
+            intrinsic_rise : 1.5
+            intrinsic_fall : 1.5
+            }
+        timing( ) { /* th  - CK_EN hold */
+            related_bus_pins : "nWE";
+            timing_type : "hold_rising";
+            intrinsic_rise : 1.5
+            intrinsic_fall : 1.5
+            }
+        }
+
+/* ------------------------------ Chip-Enable pin ---------------------- */
+
+    pin(CE2) {
+        direction : input ;
+        capacitance : 0;
+        fanout_load : 1;
+        timing( ) { /* tsu  - CK_EN setup */
+            related_bus_pins : "nWE";
+            timing_type : "setup_falling";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* th  - CK_EN hold */
+            related_bus_pins : "nWE";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+    }
+    
+    
+/*
+*/
+/*
+ Fake library for LD/ST RAM
+
+                          Confidential Information
+               Limited Distribution to Authorized Persons Only
+           Copyright(c) 1998 - 2002 ARC INTERNATIONAL (UK) LIMITED
+                            All Rights Reserved
+
+ Revision info. : $Workfile$ $Revision$ $Date$
+*/
+cell(fake_dccm) {
+    area        :   0;
+    dont_use    :   true;
+    dont_touch  :   true;
+
+/* ---------------------------- Address pins ------------------------- */
+    bus(address) {
+        bus_type : bus17;
+        direction : input;
+        capacitance : 0;
+        fanout_load : 1;
+        timing( ) { /* tsu - address setup */
+            related_pin : "clk";
+            timing_type : "setup_rising";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* tah - address hold */
+            related_pin : "clk";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+/* ---------------------------- Write enable pin ------------------------- */
+    bus(we) {
+        bus_type : bus4;
+        direction : input ;
+        capacitance : 0;
+        fanout_load : 1;
+        clock : true ;
+        timing( ) { /* tsu  - WE setup */
+            related_pin : "clk";
+            timing_type : "setup_rising";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* th  - WE hold */
+            related_pin : "clk";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+/* ---------------------------- Clock enable pin ------------------------- */
+    bus(ck_en) {        
+        bus_type : bus4;
+        direction : input ;
+        capacitance : 0;
+        fanout_load : 1;
+        clock : true ;
+        timing( ) { /* tsu  - CK_EN setup */
+            related_pin : "clk";
+            timing_type : "setup_rising";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* th  - CK_EN hold */
+            related_pin : "clk";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+/* --------------------------------- Clock pin ------------------------- */
+    pin(clk) {
+        direction : input;
+        capacitance : 0;
+        clock : true ;
+        }
+
+/* ------------------------------ Input Data pins ---------------------- */
+    bus(wr_data) {
+        bus_type : bus32
+        direction : input;
+        capacitance : 0;
+        fanout_load : 1;
+        timing( ) { /* tdsc  - data setup to clock*/
+            related_pin : "clk";
+            timing_type : "setup_rising";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* tdhc  - address hold from clock*/
+            related_pin : "clk";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+
+/* ------------------------------ Output Data pins ---------------------- */
+
+    bus(rd_data) {
+        bus_type : bus32
+        direction : output;
+        timing ( ) { /* tdor - Output from clock */
+            related_pin : "clk";
+            timing_type : "rising_edge";
+            intrinsic_rise : 1.5
+            intrinsic_fall : 1.5
+            }
+        }
+    }
+
+/*
+*/
+/*
+ Fake library for Code RAM
+
+                          Confidential Information
+               Limited Distribution to Authorized Persons Only
+           Copyright(c) 1998 - 2002 ARC INTERNATIONAL (UK) LIMITED
+                            All Rights Reserved
+
+ Revision info. : $Workfile$ $Revision$ $Date$
+*/
+
+
+cell(fake_iccm) {
+    area        :   0;
+    dont_use    :   true;
+    dont_touch  :   true;
+
+/* ---------------------------- Address pins ------------------------- */
+    bus(address) {
+        bus_type : bus17;
+        direction : input;
+        capacitance : 0;
+        fanout_load : 1;
+        timing( ) { /* tsu - address setup */
+            related_pin : "clk";
+            timing_type : "setup_rising";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* tah - address hold */
+            related_pin : "clk";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+/* ---------------------------- Write enable pins ------------------------ */
+    bus(we) {
+        bus_type : bus4;
+        direction : input;
+        capacitance : 0;
+        fanout_load : 1;
+        clock : true ;
+        timing( ) { /* tsu  - WE setup */
+            related_pin : "clk";
+            timing_type : "setup_rising";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* th  - WE hold */
+            related_pin : "clk";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+/* ---------------------------- Clock enable pins ------------------------ */
+    bus(ck_en) {
+        bus_type : bus4;
+        direction : input ;
+        capacitance : 0;
+        fanout_load : 1;
+        clock : true ;
+        timing( ) { /* tsu  - CK_EN setup */
+            related_pin : "clk";
+            timing_type : "setup_rising";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* th  - CK_EN hold */
+            related_pin : "clk";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+/* --------------------------------- Clock pin ------------------------- */
+    pin(clk) {
+        direction : input;
+        capacitance : 0;
+        clock : true ;
+        }
+
+/* ------------------------------ input data pins ---------------------- */
+    bus(wr_data) {
+        bus_type : bus32
+        direction : input;
+        capacitance : 0;
+        fanout_load : 1;
+        timing( ) { /* tdsc  - data setup to clock*/
+            related_pin : "clk";
+            timing_type : "setup_rising";
+            intrinsic_rise : 0.21
+            intrinsic_fall : 0.21
+            }
+        timing( ) { /* tdhc  - address hold from clock*/
+            related_pin : "clk";
+            timing_type : "hold_rising";
+            intrinsic_rise : 0
+            intrinsic_fall : 0
+            }
+        }
+
+
+/* ------------------------------ output data pins ---------------------- */
+
+    bus(rd_data) {
+        bus_type : bus32
+        direction : output;
+        timing ( ) { /* tdor - Output from clock */
+            related_pin : "clk";
+            timing_type : "rising_edge";
+            intrinsic_rise : 1.5
+            intrinsic_fall : 1.5
+            }
+        }
+    }
+
+
+/*
+*/
+
+/* end of library */
+}
+

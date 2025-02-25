@@ -1,0 +1,13 @@
+build_dir: 2-custom_dc_scripts
+build_id: '2'
+commands:
+- cp generate-results.tcl           outputs/generate-results.tcl
+edges_i: {}
+edges_o:
+  generate-results.tcl:
+  - f: generate-results.tcl
+    step: 6-synopsys-dc-synthesis
+name: custom_dc_scripts
+outputs:
+- generate-results.tcl
+source: /home/users/brionqye/Documents/EE292A/ee292a_lab2/design/custom_dc_scripts

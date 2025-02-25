@@ -1,0 +1,20 @@
+build_dir: 3-info
+build_id: '3'
+commands:
+- echo "Design name      -- $design_name"
+- echo "Clock period     -- $clock_period"
+- echo "ADK              -- $adk"
+- echo "ADK view         -- $adk_view"
+- echo
+- echo "Constructed from -- $construct_path"
+- echo
+edges_i: {}
+edges_o: {}
+name: info
+parameters:
+  adk: skywater-130nm-adk.v2021
+  adk_view: view-standard
+  clock_period: 0
+  construct_path: /home/users/brionqye/Documents/EE292A/ee292a_lab2/design/construct.py
+  design_name: cpu_isle
+source: /home/users/brionqye/Documents/EE292A/ee292a_lab2/mflowgen/steps/info

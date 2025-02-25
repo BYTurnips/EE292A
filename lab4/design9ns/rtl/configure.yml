@@ -1,0 +1,39 @@
+#=========================================================================
+# RTL Node
+#=========================================================================
+# Author : Kavya Somasi 
+# Date   : March 31, 2022
+#
+
+name: rtl
+
+#-------------------------------------------------------------------------
+# Inputs and Outputs
+#-------------------------------------------------------------------------
+
+outputs:
+  - design.v
+  - extutil.v
+  - jtag_defs.v
+  - arcutil.v
+  - arcutil_pkg_defines.v
+  - asmutil.v
+  - che_util.v
+  - xdefs.v
+  - uxdefs.v
+  - ext_msb.v
+  - arc600constants.v
+
+commands:
+  - source concat_rtl
+  - cat concat_rtl.v > outputs/design.v
+  - cat verilog/extutil.v > outputs/extutil.v 
+  - cat verilog/jtag_defs.v > outputs/jtag_defs.v 
+  - cat verilog/arcutil.v > outputs/arcutil.v 
+  - cat verilog/arcutil_pkg_defines.v > outputs/arcutil_pkg_defines.v 
+  - cat verilog/asmutil.v > outputs/asmutil.v 
+  - cat verilog/che_util.v > outputs/che_util.v 
+  - cat verilog/xdefs.v > outputs/xdefs.v 
+  - cat verilog/uxdefs.v > outputs/uxdefs.v 
+  - cat verilog/ext_msb.v > outputs/ext_msb.v 
+  - cat verilog/arc600constants.v > outputs/arc600constants.v 

@@ -1,0 +1,15 @@
+build_dir: 1-constraints
+build_id: '1'
+commands:
+- cat cpu_isle.sdc > outputs/constraints.tcl
+edges_i: {}
+edges_o:
+  constraints.tcl:
+  - f: constraints.tcl
+    step: 6-synopsys-dc-synthesis
+name: constraints
+outputs:
+- constraints.tcl
+parameters:
+  design_name: cpu_isle
+source: /home/users/brionqye/Documents/EE292A/ee292a_lab2/design/constraints

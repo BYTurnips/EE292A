@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Sat Apr 13 14:32:35 2024
+****************************************
+
+
+    Net: iarc600/iquarc/ialu/ixalu/n949
+
+    max_capacitance        0.05
+  - Capacitance            0.05
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase significant digits)
+
+
+    Design: cpu_isle
+
+    max_leakage_power          0.00
+  - Current Leakage Power     73.27
+  ----------------------------------
+    Slack                    -73.27  (VIOLATED)
+
+
+    Net: ick_gen/clk_in
+
+    multiport_net          0.00
+  - actual cost            1.00
+  ------------------------------
+    Violation             -1.00  (VIOLATED)
+
+
+    Net: ick_gen/clk_system_in
+
+    multiport_net          0.00
+  - actual cost            1.00
+  ------------------------------
+    Violation             -1.00  (VIOLATED)
+
+
+1

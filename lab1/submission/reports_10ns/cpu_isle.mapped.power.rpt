@@ -1,0 +1,119 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Sat Apr 13 16:01:21 2024
+****************************************
+
+
+Library(s) Used:
+
+    sky130_fd_sc_hd__tt_025C_1v80 (File: /home/users/brionqye/Documents/EE292A/ee292a_lab1/build_10ns/6-synopsys-dc-synthesis/inputs/adk/stdcells.db)
+    arc_rams (File: /home/users/brionqye/Documents/EE292A/ee292a_lab1/build_10ns/6-synopsys-dc-synthesis/inputs/arc_rams.db)
+
+Information: The library cell 'fake_dccm' in the library 'arc_rams' is not characterized for internal power. (PWR-227)
+Information: The library cell 'fake_iccm' in the library 'arc_rams' is not characterized for internal power. (PWR-227)
+Information: The design contains cells, other than constants and black boxes, that are not characterized for internal power. (PWR-228)
+
+Operating Conditions: tt_025C_1v80   Library: sky130_fd_sc_hd__tt_025C_1v80
+Wire Load Model Mode: Inactive.
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+cpu_isle                                  0.677    1.853   74.358    2.530 100.0
+  ijtag_port (cpu_isle_jtag_port_0)    2.50e-02    0.139    4.551    0.164   6.5
+    u_hif2bt (cpu_isle_hif2bt_0)       1.43e-02 4.57e-02    3.098 6.01e-02   2.4
+      add_x_1 (cpu_isle_hif2bt_DW01_add_J15_0_0) 1.21e-06 1.44e-06    0.361 3.01e-06   0.0
+    u_tap_controller (cpu_isle_tap_controller_0) 8.93e-04 2.51e-03    0.166 3.40e-03   0.1
+    u_sys_clk_sync (cpu_isle_sys_clk_sync_0) 5.13e-03 7.01e-02    0.221 7.53e-02   3.0
+    u_debug_port (cpu_isle_debug_port_0) 4.37e-03 2.06e-02    1.055 2.49e-02   1.0
+  iibus_cksyn (cpu_isle_ibus_cksyn_0)  4.58e-03 3.47e-02    0.172 3.93e-02   1.6
+    icksyn_main (cpu_isle_ibus_cksyn_main_0) 3.29e-03 2.94e-02    0.152 3.26e-02   1.3
+    icksyn_sys (cpu_isle_ibus_cksyn_sys_0) 1.29e-03 5.36e-03 2.00e-02 6.65e-03   0.3
+  iarc600 (cpu_isle_arc600_0)             0.442    1.426   63.331    1.869  73.9
+    idmp (cpu_isle_dmp_0)              3.86e-02    0.107    5.400    0.146   5.8
+      idccm_control (cpu_isle_dccm_control_0) 2.31e-02 7.19e-02    0.996 9.50e-02   3.8
+        U_readsort (cpu_isle_readsort_1) 5.60e-03 4.31e-03    0.205 9.91e-03   0.4
+      imem_align_chk (cpu_isle_mem_align_chk_0) 7.19e-05 4.26e-05 4.74e-03 1.15e-04   0.0
+      idebug_access (cpu_isle_debug_access_0) 3.89e-03 8.69e-03    0.481 1.26e-02   0.5
+      idecoder (cpu_isle_decoder_0)    1.41e-04 8.37e-05 2.94e-02 2.25e-04   0.0
+      ild_arb (cpu_isle_ld_arb_0)      5.35e-04 3.80e-04    0.397 9.15e-04   0.0
+      ildst_queue (cpu_isle_ldst_queue_0) 1.09e-02 2.59e-02    3.144 3.68e-02   1.5
+        U_readsort (cpu_isle_readsort_0) 2.46e-05 5.96e-06    0.135 3.07e-05   0.0
+    iquarc (cpu_isle_quarc_0)             0.404    1.319   57.756    1.723  68.1
+      idebug_exts (cpu_isle_debug_exts_0) 2.48e-02 5.75e-03    6.794 3.06e-02   1.2
+        U_actionpoints (cpu_isle_actionpoints_0) 2.37e-02 5.67e-03    6.313 2.94e-02   1.2
+          U_ap_compare1 (cpu_isle_ap_compare_1) 4.86e-03 2.35e-04    1.388 5.10e-03   0.2
+          U_ap_compare0 (cpu_isle_ap_compare_0) 4.96e-03 2.42e-04    1.380 5.20e-03   0.2
+      iauxiliary (cpu_isle_auxiliary_0) 7.84e-02    0.501    6.069    0.580  22.9
+        itimer0 (cpu_isle_timer0_0)    5.18e-02    0.284    1.553    0.336  13.3
+          add_x_1 (cpu_isle_timer0_DW01_inc_J12_0_0) 5.29e-04 5.48e-04    0.352 1.08e-03   0.0
+        ihostif (cpu_isle_hostif_0)    1.36e-02    0.125    1.046    0.138   5.5
+        ixaux_regs (cpu_isle_xaux_regs_0) 4.95e-03 1.41e-02    1.295 1.90e-02   0.8
+        iaux_regs (cpu_isle_aux_regs_0) 7.67e-03 7.86e-02    1.316 8.63e-02   3.4
+          U_debug (cpu_isle_debug_0)   5.39e-04 1.16e-02 9.44e-02 1.21e-02   0.5
+          U_flags (cpu_isle_flags_0)   6.01e-03 5.89e-02    0.706 6.49e-02   2.6
+      iregisters (cpu_isle_registers_0)    0.114    0.214   16.700    0.328  12.9
+        iif_sys (cpu_isle_if_sys_0)    4.07e-02 8.54e-02    2.117    0.126   5.0
+          iiccm_control (cpu_isle_iccm_control_0) 4.07e-02 8.54e-02    2.006    0.126   5.0
+        iinst_align (cpu_isle_inst_align_0) 1.86e-02 1.38e-02    0.555 3.24e-02   1.3
+        ixcoreregs (cpu_isle_xcoreregs_0) 5.63e-05 7.06e-05    0.144 1.27e-04   0.0
+        icoreregs (cpu_isle_coreregs_0) 4.52e-02    0.113   13.157    0.158   6.3
+          iregfile_3p_wrap (cpu_isle_regfile_3p_wrap_0) 5.88e-03 5.69e-02    5.924 6.28e-02   2.5
+            U_regfile_3p (cpu_isle_regfile_3p_0) 3.34e-03 4.86e-02    5.653 5.19e-02   2.1
+          isync_regs (cpu_isle_sync_regs_0) 7.89e-03 1.35e-02    1.259 2.14e-02   0.8
+          iloopcnt (cpu_isle_loopcnt_0) 5.16e-03 1.31e-02    1.587 1.82e-02   0.7
+            DP_OP_13J18_122_8061 (cpu_isle_loopcnt_DP_OP_13J18_122_8061_J18_0_0) 2.15e-04 2.43e-04    0.225 4.58e-04   0.0
+            DP_OP_14J18_123_8061 (cpu_isle_loopcnt_DP_OP_14J18_123_8061_J18_0_0) 2.44e-04 3.17e-04    0.209 5.61e-04   0.0
+            U_dec32 (cpu_isle_dec32_0) 5.74e-06 4.10e-06 3.50e-02 9.87e-06   0.0
+          icr_int (cpu_isle_cr_int_0)  2.62e-02 2.96e-02    4.073 5.58e-02   2.2
+      ialu (cpu_isle_alu_0)            2.84e-02    0.165    8.844    0.193   7.6
+        ixalu (cpu_isle_xalu_0)        1.08e-02    0.151    5.722    0.162   6.4
+          add_x_56 (cpu_isle_xalu_DW01_add_J44_0_0)    0.000    0.000    0.387 3.87e-07   0.0
+          add_x_55 (cpu_isle_xalu_DW01_add_J43_0_0)    0.000    0.000    0.385 3.85e-07   0.0
+          u_mul32x5 (cpu_isle_mult32x5cs_0) 2.54e-08 2.79e-08    1.041 1.09e-06   0.0
+        ibigalu (cpu_isle_bigalu_0)    1.74e-02 1.36e-02    2.717 3.10e-02   1.2
+          U_adder (cpu_isle_adder_0)   3.23e-03 2.47e-03    0.398 5.69e-03   0.2
+            DP_OP_7J12_122_4863 (cpu_isle_adder_DP_OP_7J12_122_4863_0_0) 2.47e-03 1.32e-03    0.356 3.78e-03   0.1
+      icontrol (cpu_isle_control_0)       0.149    0.430   14.300    0.579  22.9
+        ipcounter (cpu_isle_pcounter_0) 4.08e-02 8.22e-02    4.411    0.123   4.9
+          add_x_1 (cpu_isle_pcounter_DW01_add_J9_0_0) 1.95e-03 1.96e-03    0.313 3.90e-03   0.2
+          add_x_19 (cpu_isle_pcounter_DW01_inc_J9_0_0) 2.69e-04 1.53e-04    0.227 4.22e-04   0.0
+        ick_ctrl (cpu_isle_ck_ctrl_0)  2.01e-03 2.58e-02    0.125 2.78e-02   1.1
+        ilsu (cpu_isle_lsu_0)          3.61e-03 1.52e-02    0.604 1.89e-02   0.7
+          U_scoreboard (cpu_isle_scorebd_0) 3.25e-03 1.52e-02    0.585 1.84e-02   0.7
+            U_scorfifo (cpu_isle_scorfifo_0) 2.72e-03 1.49e-02    0.546 1.77e-02   0.7
+              U_scoritem3 (cpu_isle_scoritem_1) 9.11e-04 7.12e-03    0.228 8.03e-03   0.3
+              U_scoritem0 (cpu_isle_scoritem_0) 1.63e-03 7.67e-03    0.250 9.30e-03   0.4
+        iint_unit (cpu_isle_int_unit_0) 1.77e-02    0.138    2.023    0.156   6.2
+        ixrctl (cpu_isle_xrctl_0)      2.50e-03 8.63e-03    0.424 1.11e-02   0.4
+        irctl (cpu_isle_rctl_0)        8.11e-02    0.160    5.368    0.241   9.5
+      iuserextensions (cpu_isle_userextensions_0) 3.45e-04 2.71e-03    1.602 3.05e-03   0.1
+        ieia_common (cpu_isle_eia_common_0) 3.45e-04 2.71e-03    0.122 3.05e-03   0.1
+  iibus (cpu_isle_ibus_0)              3.58e-02    0.153    5.666    0.189   7.5
+    ibus_dcbri_ahb (cpu_isle_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_0) 3.53e-02    0.147    5.406    0.182   7.2
+    iiarb (cpu_isle_ibus_iarb_ADDR_WIDTH24_DATA_WIDTH32_BE_WIDTH4_FIFO_DEPTH4_0) 5.24e-04 6.52e-03    0.245 7.05e-03   0.3
+  ick_gen (cpu_isle_ck_gen_0)             0.145 1.05e-02 3.28e-02    0.155   6.1
+  iio_flops (cpu_isle_io_flops_0)      6.67e-03 8.72e-02    0.359 9.39e-02   3.7
+  iarc_ram (cpu_isle_arc_ram_0)        1.77e-02 1.25e-03 3.08e-02 1.89e-02   0.7
+    iiccm_ram (cpu_isle_iccm_ram_0)    1.15e-02 7.11e-04 1.54e-02 1.22e-02   0.5
+    idccm_ram (cpu_isle_dccm_ram_0)    6.22e-03 5.35e-04 1.55e-02 6.76e-03   0.3
+1

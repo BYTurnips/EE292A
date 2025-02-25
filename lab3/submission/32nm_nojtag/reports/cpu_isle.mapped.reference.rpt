@@ -1,0 +1,2384 @@
+ 
+****************************************
+Report : reference
+Design : cpu_isle
+Version: S-2021.06-SP5-4
+Date   : Mon May 13 03:39:12 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      13    16.519360
+cpu_isle_arc600_0             38086.020353       1  38086.020353  b, h, n
+cpu_isle_arc_ram_0               32.530434       1     32.530434  b, h
+cpu_isle_ck_gen_0                26.430976       1     26.430976  h, n
+cpu_isle_ibus_0                3603.253690       1   3603.253690  b, h, n
+cpu_isle_ibus_cksyn_0            94.541570       1     94.541570  b, h, n
+cpu_isle_io_flops_0             169.005763       1    169.005763  h, n
+cpu_isle_jtag_port_0            664.840715       1    664.840715  b, h, n
+-----------------------------------------------------------------------------
+Total 8 references                                  42693.142861
+
+****************************************
+Design: cpu_isle_arc600_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+cpu_isle_dmp_0                 3175.783480       1   3175.783480  b, h, n
+cpu_isle_quarc_0              34910.236873       1  34910.236873  b, h, n
+-----------------------------------------------------------------------------
+Total 2 references                                  38086.020353
+
+****************************************
+Design: cpu_isle_dmp_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+cpu_isle_dccm_control_0         888.233294       1    888.233294  b, h, n
+cpu_isle_debug_access_0         195.690890       1    195.690890  h
+cpu_isle_decoder_0               21.602241       1     21.602241  h
+cpu_isle_ld_arb_0               129.867588       1    129.867588  h
+cpu_isle_ldst_queue_0          1928.190555       1   1928.190555  b, h, n
+cpu_isle_mem_align_chk_0         12.198912       1     12.198912  h
+-----------------------------------------------------------------------------
+Total 6 references                                   3175.783480
+
+****************************************
+Design: cpu_isle_dccm_control_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       5    10.165761
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       4     9.149184
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      34    86.408960
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      66   167.735041
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       3     9.149184
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      17    56.165826
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       4    12.198912
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      23   163.668739 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032       2    14.232064 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      15    19.060800
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       6     9.149184
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       4     7.116032
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      32    65.060867
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      32    65.060867
+cpu_isle_SNPS_CLOCK_GATE_HIGH_dccm_control_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_dccm_control_1     5.845312       1     5.845312 b, h
+cpu_isle_readsort_1             171.547202       1    171.547202  h
+-----------------------------------------------------------------------------
+Total 20 references                                   888.233294
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_dccm_control_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_dccm_control_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_readsort_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       2     4.066304
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       2     4.574592
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      20    50.828800
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      18    45.745920
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       3     3.812160
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       9    27.447551
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      16    32.530434
+-----------------------------------------------------------------------------
+Total 8 references                                    171.547202
+
+****************************************
+Design: cpu_isle_debug_access_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       2     2.541440
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      95   193.149450
+-----------------------------------------------------------------------------
+Total 2 references                                    195.690890
+
+****************************************
+Design: cpu_isle_decoder_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       4    13.215488 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       1     1.270720
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       2     4.066304
+-----------------------------------------------------------------------------
+Total 4 references                                     21.602241
+
+****************************************
+Design: cpu_isle_ld_arb_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       1     2.033152
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      32   105.723907
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       2     2.541440
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       1     1.524864
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       2     4.066304
+OR2X2_RVT          saed32rvt_tt0p85v25c     2.287296       2     4.574592
+-----------------------------------------------------------------------------
+Total 10 references                                   129.867588
+
+****************************************
+Design: cpu_isle_ldst_queue_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       5    10.165761
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       3     6.861888
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      11    27.955840
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440     152   386.298882
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       4    12.198912
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032     150  1067.404819 n
+DFFARX2_RVT        saed32rvt_tt0p85v25c     7.624320       1     7.624320 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032       2    14.232064 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      30    38.121600
+INVX4_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      15    22.872959
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       8    14.232064
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       3     6.099456
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       5    10.165761
+NOR2X2_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OAI22X2_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      34    69.127172
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_2     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_3     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_4     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_5     5.845312       1     5.845312 b, h
+cpu_isle_readsort_0             171.547202       1    171.547202  h
+-----------------------------------------------------------------------------
+Total 29 references                                  1928.190555
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ldst_queue_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_readsort_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       2     4.066304
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       2     4.574592
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      20    50.828800
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      18    45.745920
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       3     3.812160
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       9    27.447551
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      16    32.530434
+-----------------------------------------------------------------------------
+Total 8 references                                    171.547202
+
+****************************************
+Design: cpu_isle_mem_align_chk_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       2     4.066304
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       2     2.541440
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+-----------------------------------------------------------------------------
+Total 4 references                                     12.198912
+
+****************************************
+Design: cpu_isle_quarc_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      19    38.629890
+NBUFFX4_RVT        saed32rvt_tt0p85v25c     2.541440       1     2.541440
+cpu_isle_alu_0                 6452.970314       1   6452.970314  b, h, n
+cpu_isle_auxiliary_0           2745.009387       1   2745.009387  b, h, n
+cpu_isle_control_0             9216.278137       1   9216.278137  b, h, n
+cpu_isle_debug_exts_0          3855.110394       1   3855.110394  b, h, n
+cpu_isle_registers_0          12515.829788       1  12515.829788  b, h, n
+cpu_isle_userextensions_0        83.867521       1     83.867521  b, h, n
+-----------------------------------------------------------------------------
+Total 8 references                                  34910.236873
+
+****************************************
+Design: cpu_isle_alu_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       4     8.132608
+cpu_isle_bigalu_0              2089.826119       1   2089.826119  b, h, n
+cpu_isle_xalu_0                4355.011587       1   4355.011587  b, h, n
+-----------------------------------------------------------------------------
+Total 3 references                                   6452.970314
+
+****************************************
+Design: cpu_isle_bigalu_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      17    34.563586
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       2     4.574592
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      18    45.745920
+AO21X2_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      72   182.983681
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       5    15.248640
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872       5    16.519361
+AOI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728      36   109.790205
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      32   227.713028 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720     106   134.696321
+INVX2_RVT          saed32rvt_tt0p85v25c     1.524864       2     3.049728
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      85   129.613436
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008      57   101.403458
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152      52   105.723909
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+NBUFFX4_RVT        saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       4    12.198912
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440      49   124.530560
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440     106   269.392641
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728      18    54.895103
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       5    16.519361
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       4    12.198912
+OAI221X1_RVT       saed32rvt_tt0p85v25c     3.558016      31   110.298498
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      14    28.464129
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       2     5.082880
+cpu_isle_SNPS_CLOCK_GATE_HIGH_bigalu_0     5.845312       1     5.845312 b, h
+cpu_isle_adder_0                318.442427       1    318.442427  h
+-----------------------------------------------------------------------------
+Total 30 references                                  2089.826119
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_bigalu_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_adder_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       3     3.812160
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       8    24.397823
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+cpu_isle_adder_DP_OP_7J21_122_4863_0_0   278.287675       1   278.287675 h
+-----------------------------------------------------------------------------
+Total 7 references                                    318.442427
+
+****************************************
+Design: cpu_isle_adder_DP_OP_7J21_122_4863_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AOI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       6    18.298368
+FADDX1_RVT         saed32rvt_tt0p85v25c     4.828736      23   111.060924 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      14    17.790080
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      20    30.497279
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440      12    30.497280
+OAI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       8    24.397823
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+XNOR2X2_RVT        saed32rvt_tt0p85v25c     4.574592       5    22.872961
+XOR2X2_RVT         saed32rvt_tt0p85v25c     4.574592       4    18.298368
+-----------------------------------------------------------------------------
+Total 10 references                                   278.287675
+
+****************************************
+Design: cpu_isle_xalu_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      41    83.359236
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296      10    22.872961
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       6    15.248640
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      51   129.613441
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440     238   604.862722
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       8    24.397823
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      11    36.342593
+AOI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728      22    67.094014
+AOI221X1_RVT       saed32rvt_tt0p85v25c     3.558016       2     7.116032
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032     139   989.128465 n
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872      10    33.038721 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720     113   143.591361
+MUX21X1_RVT        saed32rvt_tt0p85v25c     3.303872       4    13.215488
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864     201   306.497656
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008      30    53.370241
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152      83   168.751625
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728      18    54.895103
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440      12    30.497280
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440      21    53.370240
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728      11    33.547007
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       3     9.911616
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728      12    36.596735
+OAI221X1_RVT       saed32rvt_tt0p85v25c     3.558016       1     3.558016
+OAI222X1_RVT       saed32rvt_tt0p85v25c     3.812160       1     3.812160
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      62   126.055430
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OR4X2_RVT          saed32rvt_tt0p85v25c     3.812160       2     7.624320
+cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_2     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_3     5.845312       1     5.845312 b, h
+cpu_isle_mult32x5cs_0           922.796847       1    922.796847  h
+cpu_isle_xalu_DW01_add_J9_0_0   172.309626       1    172.309626  h
+cpu_isle_xalu_DW01_add_J9_1_0   165.193595       1    165.193595  h
+-----------------------------------------------------------------------------
+Total 38 references                                  4355.011587
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_xalu_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_mult32x5cs_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       4     8.132608
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      37    94.033280
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+AOI21X1_RVT        saed32rvt_tt0p85v25c     3.049728      30    91.491838
+FADDX1_RVT         saed32rvt_tt0p85v25c     4.828736      34   164.177018 r
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       2     6.607744 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      48    60.994560
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      70   106.740477
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       3     5.337024
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440      30    76.243200
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       5    12.707200
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728      91   277.525240
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+-----------------------------------------------------------------------------
+Total 16 references                                   922.796847
+
+****************************************
+Design: cpu_isle_xalu_DW01_add_J9_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FADDX1_RVT         saed32rvt_tt0p85v25c     4.828736      35   169.005754 r
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       1     3.303872 r
+-----------------------------------------------------------------------------
+Total 2 references                                    172.309626
+
+****************************************
+Design: cpu_isle_xalu_DW01_add_J9_1_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FADDX1_RVT         saed32rvt_tt0p85v25c     4.828736      32   154.519547 r
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       2     6.607744 r
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+-----------------------------------------------------------------------------
+Total 3 references                                    165.193595
+
+****************************************
+Design: cpu_isle_auxiliary_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      10    20.331521
+cpu_isle_aux_regs_0             699.658442       1    699.658442  b, h, n
+cpu_isle_hostif_0               148.928391       1    148.928391  h
+cpu_isle_timer0_0               935.249931       1    935.249931  b, h, n
+cpu_isle_xaux_regs_0            940.841102       1    940.841102  b, h, n
+-----------------------------------------------------------------------------
+Total 5 references                                   2745.009387
+
+****************************************
+Design: cpu_isle_aux_regs_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      10    20.331521
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       3     6.861888
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       3     7.624320
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      29    73.701760
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       4    12.198912
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      14    46.254210
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       2    14.232064 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      13    16.519360
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       2     3.049728
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       5     8.895040
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       6    12.198913
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       3     7.624320
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+cpu_isle_debug_0                 39.646465       1     39.646465  h, n
+cpu_isle_flags_0                406.884549       1    406.884549  b, h, n
+-----------------------------------------------------------------------------
+Total 20 references                                   699.658442
+
+****************************************
+Design: cpu_isle_debug_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       1     2.033152
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       1     7.116032 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032       1     7.116032 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       2     2.541440
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       8    16.265217
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+-----------------------------------------------------------------------------
+Total 7 references                                     39.646465
+
+****************************************
+Design: cpu_isle_flags_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       6    12.198913
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       8    20.331520
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      20    50.828800
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      21   149.436675 n
+DFFARX2_RVT        saed32rvt_tt0p85v25c     7.624320       1     7.624320 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032       1     7.116032 n
+DFFASX2_RVT        saed32rvt_tt0p85v25c     7.624320       1     7.624320 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      12    15.248640
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       9    13.723776
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008      15    26.685120
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       6    12.198913
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       5    15.248640
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       8    16.265217
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+SDFFARX1_RVT       saed32rvt_tt0p85v25c     9.149184       1     9.149184 n
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184       1     9.149184 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_flags_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_flags_1     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 24 references                                   406.884549
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_flags_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_flags_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_hostif_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      70   142.320647
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       2     4.574592
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+-----------------------------------------------------------------------------
+Total 3 references                                    148.928391
+
+****************************************
+Design: cpu_isle_timer0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       1     2.033152
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      64   162.652161
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728      16    48.795647
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      44   313.105413 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032      24   170.784771 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      11    13.977920
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       3     4.574592
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       1     1.779008
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       6    12.198913
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       4    12.198912
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728      16    48.795647
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184       1     9.149184 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_timer0_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_timer0_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_timer0_2     5.845312       1     5.845312 b, h
+cpu_isle_timer0_DW01_inc_J20_0_0   102.420035       1   102.420035 h
+-----------------------------------------------------------------------------
+Total 22 references                                   935.249931
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_timer0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_timer0_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_timer0_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_timer0_DW01_inc_J20_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872      31   102.420035 r
+-----------------------------------------------------------------------------
+Total 1 references                                    102.420035
+
+****************************************
+Design: cpu_isle_xaux_regs_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      32    65.060867
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       8    18.298368
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       7    17.790080
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      32    81.326080
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440     107   271.934081
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728      12    36.596735
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      19   135.204610 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      26    33.038720
+MUX21X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      16    24.397823
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008      11    19.569088
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152      13    26.430977
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      18    36.596738
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       2     5.591168
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       8    24.397823
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+OAI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      41    83.359236
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       4    10.165760
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       5    12.707200
+OR4X2_RVT          saed32rvt_tt0p85v25c     3.812160       1     3.812160
+cpu_isle_SNPS_CLOCK_GATE_HIGH_xaux_regs_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_xaux_regs_1     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 27 references                                   940.841102
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_xaux_regs_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_xaux_regs_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_control_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       6    12.198913
+NBUFFX4_RVT        saed32rvt_tt0p85v25c     2.541440       2     5.082880
+cpu_isle_ck_ctrl_0               61.756992       1     61.756992  h, n
+cpu_isle_int_unit_0            1400.841749       1   1400.841749  b, h, n
+cpu_isle_lsu_0                  468.895683       1    468.895683  b, h, n
+cpu_isle_pcounter_0            2766.103343       1   2766.103343  b, h, n
+cpu_isle_rctl_0                4194.392622       1   4194.392622  b, h, n
+cpu_isle_xrctl_0                307.005956       1    307.005956  b, h, n
+-----------------------------------------------------------------------------
+Total 8 references                                   9216.278137
+
+****************************************
+Design: cpu_isle_ck_ctrl_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       4    28.464128 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032       1     7.116032 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       5     6.353600
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       1     1.524864
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       1     1.779008
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       3     9.149184
+-----------------------------------------------------------------------------
+Total 9 references                                     61.756992
+
+****************************************
+Design: cpu_isle_int_unit_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      74   150.453256
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296      17    38.884033
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       9    22.872960
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       6    15.248640
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      16    40.663040
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       8    24.397823
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872       2     6.607744
+AO222X2_RVT        saed32rvt_tt0p85v25c     3.558016       1     3.558016
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       4    12.198912
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      54   384.265735 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032       8    56.928257 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      74    94.033280
+INVX2_RVT          saed32rvt_tt0p85v25c     1.524864       2     3.049728
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      72   109.790205
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008      29    51.591233
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152      23    46.762498
+NAND4X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      14    28.464129
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       9    27.447551
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440      24    60.994560
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440      25    63.536000
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       4    12.198912
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       3     9.911616
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      14    28.464129
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       3     7.624320
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       2     5.082880
+SDFFARX1_RVT       saed32rvt_tt0p85v25c     9.149184       4    36.596737 n
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184       3    27.447553 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_int_unit_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_int_unit_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_int_unit_2     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 33 references                                  1400.841749
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_int_unit_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_int_unit_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_int_unit_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_lsu_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       1     1.270720
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+cpu_isle_scorebd_0              463.558659       1    463.558659  b, h, n
+-----------------------------------------------------------------------------
+Total 3 references                                    468.895683
+
+****************************************
+Design: cpu_isle_scorebd_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       2     4.066304
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       2     2.541440
+INVX2_RVT          saed32rvt_tt0p85v25c     1.524864       1     1.524864
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       1     1.524864
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       8    16.265217
+cpu_isle_scorfifo_0             432.807234       1    432.807234  b, h, n
+-----------------------------------------------------------------------------
+Total 8 references                                    463.558659
+
+****************************************
+Design: cpu_isle_scorfifo_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       2     4.066304
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440       9    22.872960
+AO221X2_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872       2     6.607744
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       5     6.353600
+INVX2_RVT          saed32rvt_tt0p85v25c     1.524864       3     4.574592
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       2     3.049728
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+XNOR2X2_RVT        saed32rvt_tt0p85v25c     4.574592       1     4.574592
+cpu_isle_scoritem_0             196.453313       1    196.453313  b, h, n
+cpu_isle_scoritem_1             175.613505       1    175.613505  b, h, n
+-----------------------------------------------------------------------------
+Total 12 references                                   432.807234
+
+****************************************
+Design: cpu_isle_scoritem_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       3     7.624320
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728      12    36.596735
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       1     7.116032 n
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       3     9.911616 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       7     8.895040
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       4     6.099456
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       2     3.558016
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728      10    30.497279
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       2     4.066304
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184       7    64.044290 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_scoritem_1_0     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 15 references                                   196.453313
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_scoritem_1_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_scoritem_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       3     7.624320
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       6    18.298368
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       1     7.116032 n
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       2     6.607744 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       9    11.436480
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       8    12.198912
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       2     3.558016
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728      10    30.497279
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184       7    64.044290 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_scoritem_0_0     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 13 references                                   175.613505
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_scoritem_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_pcounter_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       8    16.265217
+AND2X2_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       7    16.011072
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      76   193.149441
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440     107   271.934081
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       3     9.149184
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      70   231.271048
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      84   597.746698 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032      68   483.890184 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      47    59.723840
+INVX4_RVT          saed32rvt_tt0p85v25c     2.033152       2     4.066304
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       8    12.198912
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       1     1.779008
+NAND3X2_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       3     6.099456
+NBUFFX4_RVT        saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       3     7.624320
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       4    10.165760
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       3     9.149184
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      64   130.121735
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       2     5.082880
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       2     5.082880
+SDFFARX1_RVT       saed32rvt_tt0p85v25c     9.149184      50   457.459211 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_2     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_3     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_4     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_5     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_6     5.845312       1     5.845312 b, h
+cpu_isle_pcounter_DW01_add_J6_0_0   104.707325       1   104.707325 h
+cpu_isle_pcounter_DW01_inc_J6_0_0    66.077442       1    66.077442 h
+-----------------------------------------------------------------------------
+Total 36 references                                  2766.103343
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_pcounter_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_pcounter_DW01_add_J6_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FADDX1_RVT         saed32rvt_tt0p85v25c     4.828736      21   101.403452 r
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       1     3.303872 r
+-----------------------------------------------------------------------------
+Total 2 references                                    104.707325
+
+****************************************
+Design: cpu_isle_pcounter_DW01_inc_J6_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872      20    66.077442 r
+-----------------------------------------------------------------------------
+Total 1 references                                     66.077442
+
+****************************************
+Design: cpu_isle_rctl_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      60   121.989126
+AND2X2_RVT         saed32rvt_tt0p85v25c     2.287296       2     4.574592
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296      31    70.906178
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440      21    53.370240
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      54   137.237761
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      53   134.696321
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728      50   152.486396
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      24    79.292931
+AOI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+AOI221X1_RVT       saed32rvt_tt0p85v25c     3.558016       4    14.232064
+AOI222X1_RVT       saed32rvt_tt0p85v25c     3.812160       1     3.812160
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032     137   974.896401 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032      65   462.542088 n
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       3     9.911616 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720     231   293.536321
+INVX2_RVT          saed32rvt_tt0p85v25c     1.524864       3     4.574592
+INVX4_RVT          saed32rvt_tt0p85v25c     2.033152       2     4.066304
+MUX21X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+MUX41X1_RVT        saed32rvt_tt0p85v25c     5.591168       1     5.591168
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864     194   295.823608
+NAND2X2_RVT        saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008     128   227.713028
+NAND3X1_RVT        saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152      95   193.149450
+NAND4X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      29    58.961411
+NBUFFX4_RVT        saed32rvt_tt0p85v25c     2.541440       2     5.082880
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+NOR2X2_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       9    25.160256
+NOR3X2_RVT         saed32rvt_tt0p85v25c     3.049728       1     3.049728
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728      11    33.547007
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440      43   109.281920
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440      91   231.271041
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728      49   149.436668
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       7    23.127105
+OAI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       4    12.198912
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       7    21.348095
+OAI222X1_RVT       saed32rvt_tt0p85v25c     3.812160       2     7.624320
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      36    73.193476
+OR2X2_RVT          saed32rvt_tt0p85v25c     2.287296       1     2.287296
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       5    12.707200
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       4    10.165760
+OR4X2_RVT          saed32rvt_tt0p85v25c     3.812160       1     3.812160
+SDFFARX1_RVT       saed32rvt_tt0p85v25c     9.149184      10    91.491842 n
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184       1     9.149184 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_2     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_3     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_4     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_5     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 53 references                                  4194.392622
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_rctl_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_xrctl_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       9    18.298369
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       3     6.861888
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       3     7.624320
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872       2     6.607744
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      13    92.508418 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      24    30.497280
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      14    21.348095
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       7    12.453056
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152      10    20.331521
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       2     5.591168
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       6    18.298368
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       4    10.165760
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OAI221X1_RVT       saed32rvt_tt0p85v25c     3.558016       1     3.558016
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       3     6.099456
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       3     7.624320
+cpu_isle_SNPS_CLOCK_GATE_HIGH_xrctl_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_xrctl_1     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 24 references                                   307.005956
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_xrctl_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_xrctl_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_debug_exts_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+cpu_isle_actionpoints_0        3853.077242       1   3853.077242  b, h, n
+-----------------------------------------------------------------------------
+Total 2 references                                   3855.110394
+
+****************************************
+Design: cpu_isle_actionpoints_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       8    16.265217
+AND2X2_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       4     9.149184
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       3     7.624320
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       4    10.165760
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440       4    10.165760
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      64   211.447815
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032     180  1280.885782 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      33    41.933760
+MUX21X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      10    15.248640
+NAND2X4_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008      15    26.685120
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       3     6.099456
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       3     8.386752
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       5    15.248640
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       4    10.165760
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       5    15.248640
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_2     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_3     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_4     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_5     5.845312       1     5.845312 b, h
+cpu_isle_ap_compare_0          1052.918606       1   1052.918606  h, n
+cpu_isle_ap_compare_1          1051.647886       1   1051.647886  h, n
+-----------------------------------------------------------------------------
+Total 31 references                                  3853.077242
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_actionpoints_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_ap_compare_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       6    12.198913
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      11    27.955840
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728      32    97.591293
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      23    75.989058
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      72    91.491840
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      67   102.165885
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       8    16.265217
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       3     9.149184
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OR2X2_RVT          saed32rvt_tt0p85v25c     2.287296       1     2.287296
+SDFFARX1_RVT       saed32rvt_tt0p85v25c     9.149184      33   301.923079 n
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184      33   301.923079 n
+-----------------------------------------------------------------------------
+Total 15 references                                  1052.918606
+
+****************************************
+Design: cpu_isle_ap_compare_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       5    10.165761
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      11    27.955840
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728      32    97.591293
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      23    75.989058
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      71    90.221120
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      68   103.690749
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       8    16.265217
+NOR2X4_RVT         saed32rvt_tt0p85v25c     3.303872       1     3.303872
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       3     9.149184
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184      66   603.846159 n
+-----------------------------------------------------------------------------
+Total 14 references                                  1051.647886
+
+****************************************
+Design: cpu_isle_registers_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      55   111.823366
+NBUFFX4_RVT        saed32rvt_tt0p85v25c     2.541440       1     2.541440
+cpu_isle_coreregs_0           10340.865394       1  10340.865394  b, h, n
+cpu_isle_if_sys_0              1427.781014       1   1427.781014  b, h, n
+cpu_isle_inst_align_0           346.144133       1    346.144133  b, h, n
+cpu_isle_xcoreregs_0            286.674441       1    286.674441  h
+-----------------------------------------------------------------------------
+Total 6 references                                  12515.829788
+
+****************************************
+Design: cpu_isle_coreregs_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       8    16.265217
+cpu_isle_cr_int_0              2942.479271       1   2942.479271  b, h, n
+cpu_isle_loopcnt_0             1059.018056       1   1059.018056  b, h, n
+cpu_isle_regfile_3p_wrap_0     5660.803574       1   5660.803574  b, h, n
+cpu_isle_sync_regs_0            662.299276       1    662.299276  b, h, n
+-----------------------------------------------------------------------------
+Total 5 references                                  10340.865394
+
+****************************************
+Design: cpu_isle_cr_int_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      10    20.331521
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       2     4.574592
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       5    12.707200
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440     112   284.641281
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440     248   630.277122
+AO22X2_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728      63   192.132859
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032     161  1145.681172 n
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872      32   105.723907 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      34    43.204480
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      42    64.044286
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       4     7.116032
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152      30    60.994563
+NBUFFX4_RVT        saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       2     5.591168
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728      10    30.497279
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152     139   282.608142
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       5    12.707200
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       2     5.082880
+cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_2     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_3     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 25 references                                  2942.479271
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_cr_int_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_loopcnt_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728      10    30.497279
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       1     3.303872 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      20    25.414400
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       1     1.524864
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       4     8.132608
+NAND4X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       1     2.795584
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       5    15.248640
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728      10    30.497279
+OAI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+OR4X2_RVT          saed32rvt_tt0p85v25c     3.812160       2     7.624320
+SDFFARX1_RVT       saed32rvt_tt0p85v25c     9.149184      54   494.055948 n
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184       1     9.149184 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_loopcnt_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_loopcnt_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_loopcnt_2     5.845312       1     5.845312 b, h
+cpu_isle_dec32_0                 37.867456       1     37.867456  h
+cpu_isle_loopcnt_DP_OP_13J11_122_8061_J11_0_0   172.817919       1   172.817919 h
+cpu_isle_loopcnt_DP_OP_14J11_123_8061_J11_0_0   167.735038       1   167.735038 h
+-----------------------------------------------------------------------------
+Total 26 references                                  1059.018056
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_loopcnt_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_loopcnt_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_loopcnt_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_dec32_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       4    10.165760
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       1     3.303872 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       6     7.624320
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       3     6.099456
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+-----------------------------------------------------------------------------
+Total 8 references                                     37.867456
+
+****************************************
+Design: cpu_isle_loopcnt_DP_OP_13J11_122_8061_J11_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       3     7.624320
+FADDX1_RVT         saed32rvt_tt0p85v25c     4.828736      22   106.232188 r
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       1     3.303872 r
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       2     3.558016
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      19    38.629890
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OR4X2_RVT          saed32rvt_tt0p85v25c     3.812160       1     3.812160
+-----------------------------------------------------------------------------
+Total 9 references                                    172.817919
+
+****************************************
+Design: cpu_isle_loopcnt_DP_OP_14J11_123_8061_J11_0_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       7    17.790080
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+FADDX1_RVT         saed32rvt_tt0p85v25c     4.828736      21   101.403452 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       1     1.270720
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      19    38.629890
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+-----------------------------------------------------------------------------
+Total 7 references                                    167.735038
+
+****************************************
+Design: cpu_isle_regfile_3p_wrap_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      64   130.121735
+AOI222X1_RVT       saed32rvt_tt0p85v25c     3.812160       2     7.624320
+DFFSSRX1_RVT       saed32rvt_tt0p85v25c     7.116032       2    14.232064 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       4     5.082880
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       2     4.066304
+OR3X1_RVT          saed32rvt_tt0p85v25c     2.541440       2     5.082880
+cpu_isle_regfile_3p_0          5494.593391       1   5494.593391  b, h, n
+-----------------------------------------------------------------------------
+Total 7 references                                   5660.803574
+
+****************************************
+Design: cpu_isle_regfile_3p_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       4     8.132608
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296      55   125.801283
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440     512  1301.217285
+DFFX1_RVT          saed32rvt_tt0p85v25c     6.607744     522  3449.242481 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       5     6.353600
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      64    97.591293
+NOR3X0_RVT         saed32rvt_tt0p85v25c     2.795584       2     5.591168
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728     128   390.365173
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_2     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_3     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_4     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_5     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_6     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_7     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_8     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_9     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_10     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_11     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_12     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_13     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_14     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_15     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_16     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_17     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 27 references                                  5494.593391
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_8 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_9 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_10 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_11 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_12 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_13 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_14 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_15 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_16 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_regfile_3p_17 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_sync_regs_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       2     4.066304
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      15    38.121600
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       7    21.348095
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      64   211.447815
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       3     9.149184
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      39   277.525253 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      26    33.038720
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       1     1.779008
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       6    12.198913
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       5    15.248640
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       2     4.066304
+cpu_isle_SNPS_CLOCK_GATE_HIGH_sync_regs_0     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 19 references                                   662.299276
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_sync_regs_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_if_sys_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+cpu_isle_iccm_control_0        1423.714710       1   1423.714710  b, h, n
+-----------------------------------------------------------------------------
+Total 2 references                                   1427.781014
+
+****************************************
+Design: cpu_isle_iccm_control_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      12    24.397825
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      54   137.237761
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440     146   371.050241
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      17    56.165826
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      74   526.586377 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      37    47.016640
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      18    27.447551
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       2     3.558016
+NAND3X2_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      32    65.060867
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440      11    27.955840
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      44    89.458693
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+cpu_isle_SNPS_CLOCK_GATE_HIGH_iccm_control_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_iccm_control_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_iccm_control_2     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 22 references                                  1423.714710
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_iccm_control_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_iccm_control_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_iccm_control_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_inst_align_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       5    10.165761
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      14    35.580160
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440      25    63.536000
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      13    42.950337
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032      18   128.088578 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      12    15.248640
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       5     7.624320
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       4     7.116032
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       7    14.232065
+cpu_isle_SNPS_CLOCK_GATE_HIGH_inst_align_0     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 15 references                                   346.144133
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_inst_align_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_xcoreregs_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       2     4.574592
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872      64   211.447815
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       2     2.541440
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       4     6.099456
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      23    46.762498
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       4    10.165760
+-----------------------------------------------------------------------------
+Total 7 references                                    286.674441
+
+****************************************
+Design: cpu_isle_userextensions_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+cpu_isle_eia_common_0            83.867521       1     83.867521  b, h, n
+-----------------------------------------------------------------------------
+Total 1 references                                     83.867521
+
+****************************************
+Design: cpu_isle_eia_common_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       9    18.298369
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       4    28.464128 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       1     1.270720
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       1     1.779008
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       7    21.348095
+cpu_isle_SNPS_CLOCK_GATE_HIGH_eia_common_0     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 9 references                                     83.867521
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_eia_common_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_arc_ram_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+cpu_isle_dccm_ram_0              16.265217       1     16.265217  b, h
+cpu_isle_iccm_ram_0              16.265217       1     16.265217  b, h
+-----------------------------------------------------------------------------
+Total 2 references                                     32.530434
+
+****************************************
+Design: cpu_isle_dccm_ram_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       8    16.265217
+fake_dccm          arc_rams       0.000000       1      0.000000  b, d
+-----------------------------------------------------------------------------
+Total 2 references                                     16.265217
+
+****************************************
+Design: cpu_isle_iccm_ram_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       8    16.265217
+fake_iccm          arc_rams       0.000000       1      0.000000  b, d
+-----------------------------------------------------------------------------
+Total 2 references                                     16.265217
+
+****************************************
+Design: cpu_isle_ck_gen_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       3     6.099456
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       2     2.541440
+LATCHX1_RVT        saed32rvt_tt0p85v25c     5.082880       3    15.248640 n
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+-----------------------------------------------------------------------------
+Total 4 references                                     26.430976
+
+****************************************
+Design: cpu_isle_ibus_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       1     2.033152
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       3     6.099456
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+cpu_isle_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_0  3306.921775       1  3306.921775 b, h, n
+cpu_isle_ibus_iarb_ADDR_WIDTH24_DATA_WIDTH32_BE_WIDTH4_FIFO_DEPTH4_0   286.166155       1   286.166155 b, h, n
+-----------------------------------------------------------------------------
+Total 5 references                                   3603.253690
+
+****************************************
+Design: cpu_isle_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152      30    60.994563
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       8    18.298368
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440      15    38.121600
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440      11    27.955840
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440     216   548.951042
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728      14    42.696191
+AO222X1_RVT        saed32rvt_tt0p85v25c     3.303872       7    23.127105
+AOI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       5    15.248640
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032     266  1892.864545 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720      55    69.889600
+MUX21X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      74   112.839933
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008      22    39.138177
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152      22    44.729346
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       4     8.132608
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440      19    48.287360
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440      19    48.287360
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728      12    36.596735
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       6    19.823233
+OAI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152      68   138.254343
+OR3X2_RVT          saed32rvt_tt0p85v25c     2.541440       1     2.541440
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_2     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_3     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_4     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_5     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_6     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_7     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_8     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 34 references                                  3306.921775
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cbri_ahb_C_DATA_WIDTH32_FIFO_DEPTH1_FIFO_PTR_WIDTH1_EXT_A_MSB23_8 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_ibus_iarb_ADDR_WIDTH24_DATA_WIDTH32_BE_WIDTH4_FIFO_DEPTH4_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       4    28.464128 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       7     8.895040
+MUX41X1_RVT        saed32rvt_tt0p85v25c     5.591168       1     5.591168
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       4     6.099456
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       4     7.116032
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152      99   201.282058
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       3     7.624320
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_iarb_ADDR_WIDTH24_DATA_WIDTH32_BE_WIDTH4_FIFO_DEPTH4_0     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 12 references                                   286.166155
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_iarb_ADDR_WIDTH24_DATA_WIDTH32_BE_WIDTH4_FIFO_DEPTH4_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_ibus_cksyn_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+cpu_isle_ibus_cksyn_main_0       86.154818       1     86.154818  b, h, n
+cpu_isle_ibus_cksyn_sys_0         8.386752       1      8.386752  h, n
+-----------------------------------------------------------------------------
+Total 2 references                                     94.541570
+
+****************************************
+Design: cpu_isle_ibus_cksyn_main_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       1     2.033152
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       2    14.232064 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032       3    21.348096 n
+HADDX1_RVT         saed32rvt_tt0p85v25c     3.303872       1     3.303872 r
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       3     3.812160
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+SDFFARX1_RVT       saed32rvt_tt0p85v25c     9.149184       1     9.149184 n
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184       2    18.298368 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cksyn_main_0     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 10 references                                    86.154818
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_ibus_cksyn_main_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_ibus_cksyn_sys_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       1     7.116032 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       1     1.270720
+-----------------------------------------------------------------------------
+Total 2 references                                      8.386752
+
+****************************************
+Design: cpu_isle_io_flops_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       1     7.116032 n
+DFFASX1_RVT        saed32rvt_tt0p85v25c     7.116032      20   142.320642 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       3     3.812160
+MUX21X1_RVT        saed32rvt_tt0p85v25c     3.303872       2     6.607744
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184       1     9.149184 n
+-----------------------------------------------------------------------------
+Total 5 references                                    169.005763
+
+****************************************
+Design: cpu_isle_jtag_port_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       1     1.270720
+MUX21X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+NBUFFX2_RVT        saed32rvt_tt0p85v25c     2.033152       2     4.066304
+cpu_isle_debug_port_0           537.260425       1    537.260425  b, h, n
+cpu_isle_sys_clk_sync_0           3.303872       1      3.303872  h
+cpu_isle_tap_controller_0       115.635522       1    115.635522  h, n
+-----------------------------------------------------------------------------
+Total 6 references                                    664.840715
+
+****************************************
+Design: cpu_isle_debug_port_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AO21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AO22X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+AOI21X1_RVT        saed32rvt_tt0p85v25c     3.049728       8    24.397823
+AOI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       8    10.165760
+MUX21X1_RVT        saed32rvt_tt0p85v25c     3.303872       3     9.911616
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864      28    42.696191
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       2     3.558016
+NOR4X1_RVT         saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OA21X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       4     8.132608
+SDFFARX1_RVT       saed32rvt_tt0p85v25c     9.149184       3    27.447553 n
+SDFFASX1_RVT       saed32rvt_tt0p85v25c     9.149184      39   356.818185 n
+cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_0     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_1     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_2     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_3     5.845312       1     5.845312 b, h
+cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_4     5.845312       1     5.845312 b, h
+-----------------------------------------------------------------------------
+Total 20 references                                   537.260425
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_SNPS_CLOCK_GATE_HIGH_debug_port_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+CGLPPRX2_RVT       saed32rvt_tt0p85v25c     5.845312       1     5.845312 b
+-----------------------------------------------------------------------------
+Total 1 references                                      5.845312
+
+****************************************
+Design: cpu_isle_sys_clk_sync_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+MUX21X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+-----------------------------------------------------------------------------
+Total 1 references                                      3.303872
+
+****************************************
+Design: cpu_isle_tap_controller_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt0p85v25c     2.033152       3     6.099456
+AND3X1_RVT         saed32rvt_tt0p85v25c     2.287296       1     2.287296
+AND4X1_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+AO221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+DFFARX1_RVT        saed32rvt_tt0p85v25c     7.116032       5    35.580161 n
+INVX1_RVT          saed32rvt_tt0p85v25c     1.270720       5     6.353600
+NAND2X0_RVT        saed32rvt_tt0p85v25c     1.524864       4     6.099456
+NAND3X0_RVT        saed32rvt_tt0p85v25c     1.779008       8    14.232064
+NAND4X0_RVT        saed32rvt_tt0p85v25c     2.033152       7    14.232065
+NOR2X0_RVT         saed32rvt_tt0p85v25c     2.541440       1     2.541440
+OA22X1_RVT         saed32rvt_tt0p85v25c     2.541440       2     5.082880
+OA221X1_RVT        saed32rvt_tt0p85v25c     3.049728       2     6.099456
+OA222X1_RVT        saed32rvt_tt0p85v25c     3.303872       1     3.303872
+OAI22X1_RVT        saed32rvt_tt0p85v25c     3.049728       1     3.049728
+OR2X1_RVT          saed32rvt_tt0p85v25c     2.033152       1     2.033152
+-----------------------------------------------------------------------------
+Total 15 references                                   115.635522
+1
